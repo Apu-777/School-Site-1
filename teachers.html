@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Teachers — Ridgeview Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
+        <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
+      </svg>
+      <span class="brand-name">Ridgeview<br>Academy</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="teachers.html" class="active">Teachers</a>
+      <a href="students.html">Students</a>
+      <a href="results.html">Exam Results</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-nav">Enquire</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Teachers</div>
+      <h1>Faculty who chose to stay.</h1>
+      <p>Average teacher tenure at Ridgeview is 11 years. Every teacher below also advises, coaches, or runs a club outside the classroom.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Departments</button>
+        <button class="filter-btn" data-filter="sciences">Sciences</button>
+        <button class="filter-btn" data-filter="humanities">Humanities</button>
+        <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+        <button class="filter-btn" data-filter="design">Design &amp; Making</button>
+        <button class="filter-btn" data-filter="languages">World Languages</button>
+        <button class="filter-btn" data-filter="arts">Arts</button>
+      </div>
+
+      <div class="teacher-grid">
+
+        <div class="teacher-card" data-dept="sciences">
+          <div class="avatar" style="background:#2F4F3E;">MH</div>
+          <span class="teacher-dept">Sciences</span>
+          <h3>Marcus Halloway</h3>
+          <p>Department chair and physics teacher. Runs the senior research seminar with the state university's materials lab.</p>
+          <span class="teacher-years">At Ridgeview since 2009</span>
+        </div>
+
+        <div class="teacher-card" data-dept="sciences">
+          <div class="avatar" style="background:#2F4F3E;">RS</div>
+          <span class="teacher-dept">Sciences</span>
+          <h3>Rina Sato</h3>
+          <p>Teaches biology and environmental science. Leads the campus native-plants restoration project.</p>
+          <span class="teacher-years">At Ridgeview since 2015</span>
+        </div>
+
+        <div class="teacher-card" data-dept="humanities">
+          <div class="avatar" style="background:#A63A32;">DO</div>
+          <span class="teacher-dept">Humanities</span>
+          <h3>David Okafor</h3>
+          <p>Teaches U.S. and world history as seminar discussion from 9th grade on. Coaches debate.</p>
+          <span class="teacher-years">At Ridgeview since 2012</span>
+        </div>
+
+        <div class="teacher-card" data-dept="humanities">
+          <div class="avatar" style="background:#A63A32;">EL</div>
+          <span class="teacher-dept">Humanities</span>
+          <h3>Elena Larsen</h3>
+          <p>English literature. Editor of the student literary magazine, now in its 14th year.</p>
+          <span class="teacher-years">At Ridgeview since 2018</span>
+        </div>
+
+        <div class="teacher-card" data-dept="mathematics">
+          <div class="avatar" style="background:#122040;">TW</div>
+          <span class="teacher-dept">Mathematics</span>
+          <h3>Thomas Weiss</h3>
+          <p>Runs the proof-writing track and coaches the math team to three regional finals since 2020.</p>
+          <span class="teacher-years">At Ridgeview since 2011</span>
+        </div>
+
+        <div class="teacher-card" data-dept="mathematics">
+          <div class="avatar" style="background:#122040;">AN</div>
+          <span class="teacher-dept">Mathematics</span>
+          <h3>Aisha Noor</h3>
+          <p>Teaches algebra through pre-calculus with an emphasis on real-world modeling projects.</p>
+          <span class="teacher-years">At Ridgeview since 2021</span>
+        </div>
+
+        <div class="teacher-card" data-dept="design">
+          <div class="avatar" style="background:#B98A36;">JC</div>
+          <span class="teacher-dept">Design &amp; Making</span>
+          <h3>James Carrick</h3>
+          <p>Runs the fabrication lab and the student-operated 3D-print farm. Formerly a furniture maker.</p>
+          <span class="teacher-years">At Ridgeview since 2016</span>
+        </div>
+
+        <div class="teacher-card" data-dept="languages">
+          <div class="avatar" style="background:#2F4F3E;">MV</div>
+          <span class="teacher-dept">World Languages</span>
+          <h3>Mireille Vidal</h3>
+          <p>Teaches French and organizes the 11th grade immersion term in Quebec.</p>
+          <span class="teacher-years">At Ridgeview since 2013</span>
+        </div>
+
+        <div class="teacher-card" data-dept="languages">
+          <div class="avatar" style="background:#2F4F3E;">LZ</div>
+          <span class="teacher-dept">World Languages</span>
+          <h3>Li Zhang</h3>
+          <p>Teaches Mandarin across all levels and leads the annual Lunar New Year campus event.</p>
+          <span class="teacher-years">At Ridgeview since 2019</span>
+        </div>
+
+        <div class="teacher-card" data-dept="arts">
+          <div class="avatar" style="background:#A63A32;">SB</div>
+          <span class="teacher-dept">Arts</span>
+          <h3>Sofia Bianchi</h3>
+          <p>Directs the black-box theater program and its three student-directed productions each year.</p>
+          <span class="teacher-years">At Ridgeview since 2014</span>
+        </div>
+
+        <div class="teacher-card" data-dept="arts">
+          <div class="avatar" style="background:#A63A32;">KP</div>
+          <span class="teacher-dept">Arts</span>
+          <h3>Kwame Peterson</h3>
+          <p>Leads choir and jazz ensemble. Started the student songwriting elective in 2022.</p>
+          <span class="teacher-years">At Ridgeview since 2017</span>
+        </div>
+
+        <div class="teacher-card" data-dept="sciences">
+          <div class="avatar" style="background:#2F4F3E;">NG</div>
+          <span class="teacher-dept">Sciences</span>
+          <h3>Nadia Gómez</h3>
+          <p>Chemistry teacher and safety officer for all lab spaces on campus.</p>
+          <span class="teacher-years">At Ridgeview since 2020</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Ridgeview Academy</h4>
+        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="history.html">Our History</a>
+        <a href="teachers.html">Our Teachers</a>
+        <a href="students.html">Our Students</a>
+        <a href="results.html">Exam Results</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
+        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
+      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
+</body>
+</html>
