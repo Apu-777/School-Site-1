@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Students — Ridgeview Academy</title>
+<script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+<title data-en="Students — Alokito Model School &amp; College">শিক্ষার্থী — আলোকিত মডেল স্কুল অ্যান্ড কলেজ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,24 +15,28 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
         <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
       </svg>
-      <span class="brand-name">Ridgeview<br>Academy</span>
+      <span class="brand-name" data-en="Alokito Model<br>School &amp; College">আলোকিত মডেল<br>স্কুল অ্যান্ড কলেজ</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <button class="nav-toggle" aria-label="মেনু খুলুন" data-en-aria-label="Toggle menu"><span></span></button>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="students.html" class="active">Students</a>
-      <a href="results.html">Exam Results</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-en="Home">হোম</a>
+      <a href="history.html" data-en="History">ইতিহাস</a>
+      <a href="teachers.html" data-en="Teachers">শিক্ষক</a>
+      <a href="students.html" class="active" data-en="Students">শিক্ষার্থী</a>
+      <a href="results.html" data-en="Exam Results">ফলাফল</a>
+      <a href="about.html" data-en="About">আমাদের কথা</a>
+      <a href="blog.html" data-en="News">খবর</a>
+      <a href="contact.html" data-en="Contact">যোগাযোগ</a>
     </nav>
-    <a href="contact.html" class="btn btn-nav">Enquire</a>
+    <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন / Choose language">
+      <button type="button" data-lang="bn" aria-pressed="true" lang="bn">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-nav" data-en="Admission">ভর্তি তথ্য</a>
   </div>
 </header>
 
@@ -38,32 +44,32 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Students</div>
-      <h1>Life outside the classroom.</h1>
-      <p>32 student-run clubs, 14 varsity teams, and a campus where no one plays just one role.</p>
+      <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Students">শিক্ষার্থী</span></div>
+      <h1 data-en="Life outside the classroom.">ক্লাসরুমের বাইরের জীবন।</h1>
+      <p data-en="More than 25 clubs and activities, regular sports, and a campus where everyone has something to do.">২৫টির বেশি ক্লাব ও সহশিক্ষা কার্যক্রম, নিয়মিত খেলাধুলা আর এমন একটা ক্যাম্পাস, যেখানে প্রত্যেকেরই কিছু না কিছু করার আছে।</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <span class="eyebrow">Clubs &amp; Athletics</span>
-      <h2>No tryout cuts below varsity.</h2>
+      <span class="eyebrow" data-en="Clubs &amp; Sports">ক্লাব ও খেলাধুলা</span>
+      <h2 data-en="Anyone who wants to take part, can.">যে চায়, সে-ই সুযোগ পায়।</h2>
       <div class="life-grid">
         <div class="life-block block-lg">
-          <h3>Clubs &amp; Athletics</h3>
-          <p>32 student-run clubs and 14 varsity teams, from robotics and debate to soccer and crew. If you show up, you play — cuts only happen at the varsity level in a small number of sports.</p>
+          <h3 data-en="Clubs &amp; Sports">ক্লাব ও খেলাধুলা</h3>
+          <p data-en="From the science club, debate, English club, and recitation to football, cricket, and badminton — there are more than 25 clubs. Anyone interested can join; we only hold trials for inter-school competition teams.">বিজ্ঞান ক্লাব, বিতর্ক, ইংলিশ ক্লাব, আবৃত্তি থেকে শুরু করে ফুটবল, ক্রিকেট আর ব্যাডমিন্টন — সব মিলিয়ে ২৫টির বেশি ক্লাব। আগ্রহ থাকলেই যোগ দেওয়া যায়, বাছাই হয় শুধু আন্তঃস্কুল প্রতিযোগিতার দলে।</p>
         </div>
         <div class="life-block">
-          <h3>The Commons</h3>
-          <p>Our student center runs on a rotating menu voted on by a student food committee each term.</p>
+          <h3 data-en="Scouts &amp; BNCC">স্কাউট ও বিএনসিসি</h3>
+          <p data-en="Scouts, Girl Guides, and BNCC — the best place to learn discipline and leadership.">স্কাউট, গার্ল গাইড আর বিএনসিসি — শৃঙ্খলা আর নেতৃত্ব শেখার সবচেয়ে ভালো জায়গা।</p>
         </div>
         <div class="life-block">
-          <h3>Outdoor Program</h3>
-          <p>Every grade takes a fall expedition, from a two-day hike in 6th grade to a week-long backcountry trip by senior year.</p>
+          <h3 data-en="Study Tours">শিক্ষা সফর</h3>
+          <p data-en="A study tour every year for every class — from museums and historic sites all the way to the Sundarbans.">প্রতি বছর প্রতিটা শ্রেণির জন্য শিক্ষা সফর — জাদুঘর, ঐতিহাসিক জায়গা থেকে শুরু করে সুন্দরবন পর্যন্ত।</p>
         </div>
         <div class="life-block block-lg">
-          <h3>Student Government</h3>
-          <p>An elected student council sits on the school's facilities and dining committees with a real vote, not an advisory one.</p>
+          <h3 data-en="Student Cabinet">স্টুডেন্ট কেবিনেট</h3>
+          <p data-en="The student cabinet, elected by the students themselves, has a real say in decisions about the school environment, the canteen, and events.">শিক্ষার্থীদের ভোটে নির্বাচিত স্টুডেন্ট কেবিনেট স্কুলের পরিবেশ, ক্যান্টিন আর অনুষ্ঠান নিয়ে সিদ্ধান্তে সত্যিকারের মতামত দেয় — শুধু নামে না।</p>
         </div>
       </div>
     </div>
@@ -71,20 +77,20 @@
 
   <section class="section alt">
     <div class="wrap">
-      <span class="eyebrow">Recognition</span>
-      <h2>What students have built and won.</h2>
+      <span class="eyebrow" data-en="Recognition">অর্জন</span>
+      <h2 data-en="What our students have achieved.">আমাদের শিক্ষার্থীদের সাফল্য।</h2>
       <div class="card-grid cols-3">
         <div class="value-card">
-          <h3>State Robotics Finalist</h3>
-          <p>Ridgeview's FIRST Robotics team has reached state finals three years running, 2024–2026.</p>
+          <h3 data-en="National Science Fair runners-up">জাতীয় বিজ্ঞান মেলায় দ্বিতীয়</h3>
+          <p data-en="In 2025, our science club's project came second in the country at National Science &amp; Technology Week.">২০২৫ সালে জাতীয় বিজ্ঞান ও প্রযুক্তি সপ্তাহে আমাদের বিজ্ঞান ক্লাবের প্রজেক্ট সারা দেশে দ্বিতীয় হয়।</p>
         </div>
         <div class="value-card">
-          <h3>Regional Debate Champions</h3>
-          <p>The debate team won the Northern Vermont Invitational in 2025, its first regional title.</p>
+          <h3 data-en="District debate champions">জেলা বিতর্ক চ্যাম্পিয়ন</h3>
+          <p data-en="District champions at the 2025 inter-school debate competition — our first ever title.">২০২৫ সালের আন্তঃস্কুল বিতর্ক প্রতিযোগিতায় জেলা চ্যাম্পিয়ন। এটাই আমাদের প্রথম শিরোপা।</p>
         </div>
         <div class="value-card">
-          <h3>Published Young Poets</h3>
-          <p>Four students have had work accepted into the state's Young Poets anthology since 2022.</p>
+          <h3 data-en="Math Olympiad medals">গণিত অলিম্পিয়াডে পদক</h3>
+          <p data-en="Since 2022, four of our students have won medals at the divisional Math Olympiad.">২০২২ সাল থেকে আমাদের চারজন শিক্ষার্থী বিভাগীয় গণিত অলিম্পিয়াডে পদক পেয়েছে।</p>
         </div>
       </div>
     </div>
@@ -92,20 +98,20 @@
 
   <section class="section">
     <div class="wrap">
-      <span class="eyebrow">In Their Words</span>
-      <h2>What students say about Ridgeview.</h2>
+      <span class="eyebrow" data-en="In Their Words">ওদের মুখেই শুনুন</span>
+      <h2 data-en="What students say.">শিক্ষার্থীরা যা বলে।</h2>
       <div class="testimonial-grid">
         <div class="testimonial-card">
-          <p>"My advisor still remembers a paper I wrote in 9th grade. That's the kind of place this is."</p>
-          <cite>Priya N., Class of 2025</cite>
+          <p data-en="&quot;My teacher still remembers an essay I wrote in Class 9. That's the kind of place this is.&quot;">"ক্লাস নাইনে লেখা আমার একটা রচনার কথা স্যার এখনো মনে রেখেছেন। এই স্কুলটা আসলে এমনই।"</p>
+          <cite data-en="Tasnim Rahman, SSC 2025">তাসনিম রহমান, এসএসসি ২০২৫</cite>
         </div>
         <div class="testimonial-card">
-          <p>"I built my first real circuit in the fabrication lab as a sophomore. Nobody told me I was too young to try."</p>
-          <cite>Marcus T., Class of 2026</cite>
+          <p data-en="&quot;I built my first circuit in the science club in Class 8. Nobody told me I was too young to try.&quot;">"ক্লাস এইটে বিজ্ঞান ক্লাবে প্রথম একটা সার্কিট বানিয়েছিলাম। কেউ একবারও বলেনি, তুমি এখনো ছোট।"</p>
+          <cite data-en="Arif Hossain, SSC 2026">আরিফ হোসেন, এসএসসি ২০২৬</cite>
         </div>
         <div class="testimonial-card">
-          <p>"The outdoor trips sound small until you're the one navigating with a map in the rain. You grow up fast."</p>
-          <cite>Wren D., Class of 2027</cite>
+          <p data-en="&quot;Pitching a tent in the rain at scout camp taught me what teamwork really means.&quot;">"স্কাউট ক্যাম্পে বৃষ্টির মধ্যে তাঁবু খাটাতে গিয়েই বুঝেছি, দলবেঁধে কাজ করা আসলে কাকে বলে।"</p>
+          <cite data-en="Nusrat Jahan, HSC 2027 candidate">নুসরাত জাহান, এইচএসসি ২০২৭ পরীক্ষার্থী</cite>
         </div>
       </div>
     </div>
@@ -113,15 +119,15 @@
 
   <section class="section alt">
     <div class="wrap">
-      <span class="eyebrow">Campus Gallery</span>
-      <h2>A look around.</h2>
+      <span class="eyebrow" data-en="Campus Gallery">ক্যাম্পাসের ছবি</span>
+      <h2 data-en="A look around.">এক নজরে আমাদের ক্যাম্পাস।</h2>
       <div class="gallery-grid">
-        <img src="https://picsum.photos/id/1074/500/400" alt="Students at Ridgeview Academy">
-        <img src="https://picsum.photos/id/1050/500/400" alt="Ridgeview Academy outdoor program">
-        <img src="https://picsum.photos/id/1060/500/400" alt="Ridgeview Academy classroom">
-        <img src="https://picsum.photos/id/1069/500/400" alt="Ridgeview Academy campus grounds">
-        <img src="https://picsum.photos/id/1041/500/400" alt="Ridgeview Academy library">
-        <img src="https://picsum.photos/id/1035/500/400" alt="Ridgeview Academy athletics field">
+        <img src="images/students-group.jpg" alt="স্কুল ড্রেস পরা একদল ছাত্র" data-en-alt="A group of students in school uniform" loading="lazy">
+        <img src="images/students-campus.jpg" alt="ক্যাম্পাসে আড্ডা দিচ্ছে শিক্ষার্থীরা" data-en-alt="Students chatting on campus" loading="lazy">
+        <img src="images/assembly.jpg" alt="সকালের সমাবেশে সারিবদ্ধ শিক্ষার্থীরা" data-en-alt="Students lined up for morning assembly" loading="lazy">
+        <img src="images/parade.jpg" alt="জাতীয় পতাকা হাতে কুচকাওয়াজ" data-en-alt="Students marching with the national flag" loading="lazy">
+        <img src="images/library.jpg" alt="স্কুলের পাঠাগার" data-en-alt="The school library" loading="lazy">
+        <img src="images/school-building.jpg" alt="স্কুলের একাডেমিক ভবন" data-en-alt="The school's academic building" loading="lazy">
       </div>
     </div>
   </section>
@@ -132,35 +138,35 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>Ridgeview Academy</h4>
-        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+        <h4 data-en="Alokito Model School &amp; College">আলোকিত মডেল স্কুল অ্যান্ড কলেজ</h4>
+        <p data-en="Class 6 to 12 — helping students learn to think for themselves since 1978.">ষষ্ঠ থেকে দ্বাদশ শ্রেণি — ১৯৭৮ সাল থেকে আমরা শিক্ষার্থীদের নিজের মতো করে ভাবতে শেখাচ্ছি।</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="history.html">Our History</a>
-        <a href="teachers.html">Our Teachers</a>
-        <a href="students.html">Our Students</a>
-        <a href="results.html">Exam Results</a>
+        <h4 data-en="Explore">ঘুরে দেখুন</h4>
+        <a href="history.html" data-en="Our History">আমাদের ইতিহাস</a>
+        <a href="teachers.html" data-en="Our Teachers">আমাদের শিক্ষক</a>
+        <a href="students.html" data-en="Our Students">শিক্ষার্থী</a>
+        <a href="results.html" data-en="Exam Results">পরীক্ষার ফলাফল</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-en="School">প্রতিষ্ঠান</h4>
+        <a href="about.html" data-en="About Us">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর ও ঘটনা</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </div>
       <div>
-        <h4>Visit</h4>
-        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
-        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+        <h4 data-en="Visit">ঠিকানা</h4>
+        <p data-en="12/A College Road, Mirpur-10<br>Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০<br>ঢাকা-১২১৬</p>
+        <p data-en="info@yourschool.edu.bd<br>01700-000000">info@yourschool.edu.bd<br>০১৭০০-০০০০০০</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
-      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+      <span data-en="© 2026 Alokito Model School &amp; College. All rights reserved.">© ২০২৬ আলোকিত মডেল স্কুল অ্যান্ড কলেজ। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span><span data-en="Demo site · Photos:">ডেমো সাইট · ছবি:</span> <a href="images/CREDITS.md" data-en="Wikimedia Commons contributors">উইকিমিডিয়া কমন্স</a></span>
     </div>
   </div>
 </footer>
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
 <script src="script.js"></script>
 </body>
 </html>

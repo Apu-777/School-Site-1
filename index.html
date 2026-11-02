@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ridgeview Academy — A College-Preparatory Day School</title>
+<script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+<title data-en="Alokito Model School &amp; College — Dhaka">আলোকিত মডেল স্কুল অ্যান্ড কলেজ — ঢাকা</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,24 +15,28 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
         <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
       </svg>
-      <span class="brand-name">Ridgeview<br>Academy</span>
+      <span class="brand-name" data-en="Alokito Model<br>School &amp; College">আলোকিত মডেল<br>স্কুল অ্যান্ড কলেজ</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <button class="nav-toggle" aria-label="মেনু খুলুন" data-en-aria-label="Toggle menu"><span></span></button>
     <nav class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="history.html">History</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="students.html">Students</a>
-      <a href="results.html">Exam Results</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="active" data-en="Home">হোম</a>
+      <a href="history.html" data-en="History">ইতিহাস</a>
+      <a href="teachers.html" data-en="Teachers">শিক্ষক</a>
+      <a href="students.html" data-en="Students">শিক্ষার্থী</a>
+      <a href="results.html" data-en="Exam Results">ফলাফল</a>
+      <a href="about.html" data-en="About">আমাদের কথা</a>
+      <a href="blog.html" data-en="News">খবর</a>
+      <a href="contact.html" data-en="Contact">যোগাযোগ</a>
     </nav>
-    <a href="contact.html" class="btn btn-nav">Enquire</a>
+    <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন / Choose language">
+      <button type="button" data-lang="bn" aria-pressed="true" lang="bn">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-nav" data-en="Admission">ভর্তি তথ্য</a>
   </div>
 </header>
 
@@ -40,168 +46,164 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Est. 1978 &middot; Grades 6–12</span>
-        <h1>A school day built around <em>curiosity</em>.</h1>
-        <p class="hero-copy">Ridgeview Academy is a college-preparatory day school where small classes, real mentorship, and hands-on work replace the lecture-and-test routine.</p>
+        <span class="eyebrow" data-en="Est. 1978 &middot; Class 6–12">প্রতিষ্ঠিত ১৯৭৮ &middot; ষষ্ঠ থেকে দ্বাদশ শ্রেণি</span>
+        <h1 data-en="Where learning feels like <em>joy</em>, not pressure.">এখানে পড়াশোনা মানে <em>আনন্দ</em>, চাপ না।</h1>
+        <p class="hero-copy" data-en="Small sections, personal attention for every child, and hands-on learning. We go beyond rote learning and coaching to help your child truly grow.">ছোট ছোট সেকশন, প্রতিটা বাচ্চার দিকে আলাদা নজর আর হাতে-কলমে শেখা। মুখস্থ আর কোচিংয়ের বাইরে গিয়ে আমরা আপনার সন্তানকে সত্যিকারের মানুষ করে গড়ে তুলি।</p>
         <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Start an Enquiry</a>
-          <a href="about.html" class="btn btn-ghost">Why Ridgeview →</a>
+          <a href="contact.html" class="btn btn-primary" data-en="Admission Enquiry">ভর্তির খোঁজ নিন</a>
+          <a href="about.html" class="btn btn-ghost" data-en="Why Alokito →">কেন আলোকিত →</a>
         </div>
       </div>
       <div class="hero-media">
-        <img src="https://picsum.photos/id/1076/800/620" alt="Ridgeview Academy campus building">
+        <img src="images/hero.jpg" alt="রেজাল্টের দিন আনন্দে মেতে ওঠা ছাত্রীরা" data-en-alt="Students celebrating on result day" width="1280" height="853">
         <div class="hero-float-card">
-          <strong>9:1</strong>
-          student-to-teacher ratio across every grade
+          <strong data-en="40 max">সর্বোচ্চ ৪০</strong>
+          <span data-en="students per section, so no child gets lost">জন শিক্ষার্থী প্রতি সেকশনে, যাতে কেউ পিছিয়ে না পড়ে</span>
         </div>
       </div>
     </div>
     <div class="wrap">
       <div class="stats-bar">
-        <div class="stat"><span class="stat-num">46</span><span class="stat-label">years teaching</span></div>
-        <div class="stat"><span class="stat-num">9:1</span><span class="stat-label">student : teacher</span></div>
-        <div class="stat"><span class="stat-num">32</span><span class="stat-label">clubs &amp; teams</span></div>
-        <div class="stat"><span class="stat-num">94%</span><span class="stat-label">go on to 4-yr college</span></div>
+        <div class="stat"><span class="stat-num" data-en="46">৪৬</span><span class="stat-label" data-en="years of teaching">বছরের পথচলা</span></div>
+        <div class="stat"><span class="stat-num" data-en="98.6%">৯৮.৬%</span><span class="stat-label" data-en="SSC 2026 pass rate">এসএসসি ২০২৬ পাসের হার</span></div>
+        <div class="stat"><span class="stat-num" data-en="320+">৩২০+</span><span class="stat-label" data-en="GPA-5 in 5 years">জিপিএ-৫, গত ৫ বছরে</span></div>
+        <div class="stat"><span class="stat-num" data-en="25+">২৫+</span><span class="stat-label" data-en="clubs &amp; activities">ক্লাব ও সহশিক্ষা</span></div>
       </div>
     </div>
   </section>
 
   <!-- URGENT ANNOUNCEMENT TICKER -->
-<section class="announcement-bar">
-  <span class="announcement-label">Urgent Announcement</span>
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>School reopens for Fall Term on September 2, 2026 &nbsp;•&nbsp; Applications for Fall 2027 open September 1 &nbsp;•&nbsp; ...</span>
-      <span aria-hidden="true">[same text repeated]</span>
+  <section class="announcement-bar">
+    <span class="announcement-label" data-en="Urgent Notice">জরুরি নোটিশ</span>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span data-en="Annual exams begin on 23 November 2026 &nbsp;•&nbsp; Admission forms for the 2027 session are available at the school office &nbsp;•&nbsp; Last date for SSC 2027 form fill-up is 30 November &nbsp;•&nbsp; School will be closed on 16 December for Victory Day">বার্ষিক পরীক্ষা শুরু হবে ২৩ নভেম্বর ২০২৬ থেকে &nbsp;•&nbsp; ২০২৭ শিক্ষাবর্ষের ভর্তি ফর্ম স্কুল অফিসে পাওয়া যাচ্ছে &nbsp;•&nbsp; এসএসসি ২০২৭ পরীক্ষার্থীদের ফর্ম পূরণের শেষ তারিখ ৩০ নভেম্বর &nbsp;•&nbsp; ১৬ ডিসেম্বর বিজয় দিবস উপলক্ষে স্কুল বন্ধ থাকবে</span>
+        <span aria-hidden="true" data-en="Annual exams begin on 23 November 2026 &nbsp;•&nbsp; Admission forms for the 2027 session are available at the school office &nbsp;•&nbsp; Last date for SSC 2027 form fill-up is 30 November &nbsp;•&nbsp; School will be closed on 16 December for Victory Day">বার্ষিক পরীক্ষা শুরু হবে ২৩ নভেম্বর ২০২৬ থেকে &nbsp;•&nbsp; ২০২৭ শিক্ষাবর্ষের ভর্তি ফর্ম স্কুল অফিসে পাওয়া যাচ্ছে &nbsp;•&nbsp; এসএসসি ২০২৭ পরীক্ষার্থীদের ফর্ম পূরণের শেষ তারিখ ৩০ নভেম্বর &nbsp;•&nbsp; ১৬ ডিসেম্বর বিজয় দিবস উপলক্ষে স্কুল বন্ধ থাকবে</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- LEADERSHIP MESSAGES -->
-<section class="section">
-  <div class="wrap">
-    <span class="eyebrow">Leadership</span>
-    <h2>A word from our leadership.</h2>
-    <div class="message-grid">
-      <div class="message-card">
-        <div class="avatar" style="background:#A63A32;">CH</div>
-        <h3>Message from the Committee Head</h3>
-        <p>Ridgeview exists because a group of parents and teachers believed a school could be run with more trust and less bureaucracy...</p>
-        <span class="message-name">— Harold Whitfield, Committee Head</span>
-      </div>
-      <div class="message-card">
-        <div class="avatar" style="background:#122040;">HM</div>
-        <h3>Message from the Headmaster</h3>
-        <p>Every year I tell new families the same thing: we are not the right school for everyone...</p>
-        <span class="message-name">— Claire Bennington, Headmaster</span>
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow" data-en="Leadership">পরিচালনায়</span>
+      <h2 data-en="A word from our leadership.">সভাপতি ও প্রধান শিক্ষকের কথা</h2>
+      <div class="message-grid">
+        <div class="message-card">
+          <div class="avatar" style="background-color:#A63A32;" aria-hidden="true"></div>
+          <h3 data-en="Message from the Governing Body Chairman">গভর্নিং বডির সভাপতির কথা</h3>
+          <p data-en="In 1978, a few people in our area who cared about education had one wish: that our children could get the same quality of schooling here as in the big city schools. Alokito grew out of that dream, and we still run the school with that promise in mind.">১৯৭৮ সালে এলাকার কয়েকজন শিক্ষানুরাগী মানুষ একটা স্বপ্ন দেখেছিলেন — আমাদের ছেলেমেয়েরা যেন শহরের বড় স্কুলের মতো ভালো পড়াশোনা এখানেই পায়। সেই স্বপ্ন থেকেই এই স্কুলের শুরু। আজও আমরা সেই কথাটা মাথায় রেখেই স্কুল চালাই।</p>
+          <span class="message-name" data-en="— Md. Abdul Hakim, Chairman, Governing Body">— মোঃ আব্দুল হাকিম, সভাপতি, গভর্নিং বডি</span>
+        </div>
+        <div class="message-card">
+          <div class="avatar" style="background-color:#122040;" aria-hidden="true"></div>
+          <h3 data-en="Message from the Headmaster">প্রধান শিক্ষকের কথা</h3>
+          <p data-en="Every year I tell new parents the same thing: don't come to us just for good results. The results will come. What we really want is for your child to learn to ask questions, speak their mind clearly, and grow into a good human being.">প্রতি বছর নতুন অভিভাবকদের আমি একটা কথাই বলি — শুধু ভালো রেজাল্টের জন্য আমাদের কাছে আসবেন না। রেজাল্ট এমনিতেই আসবে। আমরা আসলে চাই আপনার সন্তান প্রশ্ন করতে শিখুক, নিজের কথা গুছিয়ে বলতে শিখুক, আর একজন ভালো মানুষ হয়ে উঠুক।</p>
+          <span class="message-name" data-en="— Md. Shafiqul Islam, Headmaster">— মোঃ শফিকুল ইসলাম, প্রধান শিক্ষক</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- EXPLORE THE SITE -->
   <section class="section">
     <div class="wrap">
-      <span class="eyebrow">Explore Ridgeview</span>
-      <h2>Everything you need to know, in one place.</h2>
+      <span class="eyebrow" data-en="Explore Alokito">এক নজরে</span>
+      <h2 data-en="Everything you need to know, in one place.">যা জানতে চান, সব এক জায়গায়।</h2>
       <div class="card-grid">
         <div class="link-card">
-          <span class="card-index">01</span>
-          <h3>Our History</h3>
-          <p>How six teachers and a rented farmhouse became a 46-year-old school.</p>
-          <a class="more" href="history.html">Read the story →</a>
+          <span class="card-index" data-en="01">০১</span>
+          <h3 data-en="Our History">আমাদের ইতিহাস</h3>
+          <p data-en="From one tin-shed room and 60 students to the school we are today — a 46-year story.">একটা টিনশেড ঘর আর ৬০ জন শিক্ষার্থী থেকে আজকের আলোকিত — ৪৬ বছরের গল্প।</p>
+          <a class="more" href="history.html" data-en="Read the story →">গল্পটা পড়ুন →</a>
         </div>
         <div class="link-card">
-          <span class="card-index">02</span>
-          <h3>Our Teachers</h3>
-          <p>Meet the faculty across six departments, most of whom have taught here a decade or more.</p>
-          <a class="more" href="teachers.html">Meet the faculty →</a>
+          <span class="card-index" data-en="02">০২</span>
+          <h3 data-en="Our Teachers">আমাদের শিক্ষক</h3>
+          <p data-en="Experienced teachers across six departments, most of whom have been with us for over ten years.">ছয়টি বিভাগের অভিজ্ঞ শিক্ষক, যাঁদের বেশিরভাগই এখানে আছেন দশ বছরেরও বেশি সময় ধরে।</p>
+          <a class="more" href="teachers.html" data-en="Meet the teachers →">শিক্ষকদের চিনুন →</a>
         </div>
         <div class="link-card">
-          <span class="card-index">03</span>
-          <h3>Our Students</h3>
-          <p>Clubs, athletics, and the everyday life of a Ridgeview student.</p>
-          <a class="more" href="students.html">See student life →</a>
+          <span class="card-index" data-en="03">০৩</span>
+          <h3 data-en="Student Life">শিক্ষার্থীদের জীবন</h3>
+          <p data-en="Clubs, sports, scouting, and everyday life at school.">ক্লাব, খেলাধুলা, স্কাউট আর প্রতিদিনের স্কুল জীবন।</p>
+          <a class="more" href="students.html" data-en="See student life →">ঘুরে দেখুন →</a>
         </div>
         <div class="link-card">
-          <span class="card-index">04</span>
-          <h3>Exam Results</h3>
-          <p>Five years of pass rates and subject-wise performance, in full.</p>
-          <a class="more" href="results.html">View results →</a>
+          <span class="card-index" data-en="04">০৪</span>
+          <h3 data-en="Exam Results">পরীক্ষার ফলাফল</h3>
+          <p data-en="Five years of SSC results and subject-wise marks, with nothing left out.">গত পাঁচ বছরের এসএসসি রেজাল্ট আর বিষয়ভিত্তিক নম্বর, কিছুই না লুকিয়ে।</p>
+          <a class="more" href="results.html" data-en="View results →">ফলাফল দেখুন →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY RIDGEVIEwhyW -->
+  <!-- OUR APPROACH -->
   <section class="section alt">
     <div class="wrap">
-      <span class="eyebrow">Our Approach</span>
-      <h2>Small enough to know your name. Ambitious enough to push you.</h2>
+      <span class="eyebrow" data-en="Our Approach">আমাদের পদ্ধতি</span>
+      <h2 data-en="Small enough to know every name. Ambitious enough to push every child.">প্রত্যেককে নামে চিনি, প্রত্যেককে এগিয়ে নিই।</h2>
       <div class="card-grid cols-3">
         <div class="value-card">
-          <h3>Taught, not tracked</h3>
-          <p>No sorting students into tiers in 6th grade. Every path stays open until a student chooses it.</p>
+          <h3 data-en="Understanding, not rote learning">মুখস্থ না, বুঝে শেখা</h3>
+          <p data-en="In line with the new curriculum, we focus on projects, group work, and learning by doing.">নতুন কারিকুলামের সাথে মিল রেখে প্রজেক্ট, দলগত কাজ আর হাতে-কলমে শেখার ওপর জোর দিই।</p>
         </div>
         <div class="value-card">
-          <h3>Studio time, weekly</h3>
-          <p>A standing block every week for independent projects, research, or making something with your hands.</p>
+          <h3 data-en="No coaching needed">আলাদা কোচিং লাগে না</h3>
+          <p data-en="Students who need extra help get free extra classes right here at school — no running around to coaching centres.">যাদের একটু বাড়তি সাহায্য দরকার, তাদের জন্য স্কুলেই বিনা খরচে এক্সট্রা ক্লাস। কোচিং সেন্টারে দৌড়াতে হয় না।</p>
         </div>
         <div class="value-card">
-          <h3>Faculty who stay</h3>
-          <p>Average teacher tenure at Ridgeview is 11 years. You're taught by people who chose to stay.</p>
+          <h3 data-en="Parents always in the loop">অভিভাবকের সাথে নিয়মিত যোগাযোগ</h3>
+          <p data-en="Monthly parent meetings, plus attendance and result updates sent straight to your phone by SMS.">প্রতি মাসে অভিভাবক সমাবেশ, আর হাজিরা ও রেজাল্টের খবর সরাসরি আপনার মোবাইলে এসএমএসে।</p>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- INFORMATION / DOWNLOADS -->
+  <!-- INFORMATION / DOWNLOADS -->
   <section class="info-section">
     <div class="info-overlay"></div>
     <div class="wrap info-content">
       <div class="info-heading">
-        <h2>Information</h2>
+        <h2 data-en="Notices &amp; Downloads">নোটিশ ও ডাউনলোড</h2>
         <div class="info-divider"><span></span><i></i><span></span></div>
       </div>
       <div class="info-grid">
 
-        <!-- CARD 1 -->
         <div class="info-card">
-          <div class="info-date"><span class="info-date-md">08-27</span><span class="info-date-yr">2026</span></div>
-          <div class="info-card-title">Exam Routine Download</div>
+          <div class="info-date"><span class="info-date-md" data-en="28-10">২৮-১০</span><span class="info-date-yr" data-en="2026">২০২৬</span></div>
+          <div class="info-card-title" data-en="Annual Exam Routine">বার্ষিক পরীক্ষার রুটিন</div>
           <div class="info-actions">
-            <a href="#" class="info-btn">View</a>
-            <a href="#" class="info-btn info-btn-solid">Download</a>
+            <a href="#" class="info-btn" data-en="View">দেখুন</a>
+            <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
           </div>
         </div>
 
-        <!-- CARD 2 -->
         <div class="info-card">
-          <div class="info-date"><span class="info-date-md">08-27</span><span class="info-date-yr">2026</span></div>
-          <div class="info-card-title">Tuition Fee Form Download</div>
+          <div class="info-date"><span class="info-date-md" data-en="20-10">২০-১০</span><span class="info-date-yr" data-en="2026">২০২৬</span></div>
+          <div class="info-card-title" data-en="Tuition &amp; Fee Chart">বেতন ও ফি-এর তালিকা</div>
           <div class="info-actions">
-            <a href="#" class="info-btn">View</a>
-            <a href="#" class="info-btn info-btn-solid">Download</a>
+            <a href="#" class="info-btn" data-en="View">দেখুন</a>
+            <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
           </div>
         </div>
 
-        <!-- CARD 3 -->
         <div class="info-card">
-          <div class="info-date"><span class="info-date-md">08-27</span><span class="info-date-yr">2026</span></div>
-          <div class="info-card-title">Class Routine Download</div>
+          <div class="info-date"><span class="info-date-md" data-en="15-10">১৫-১০</span><span class="info-date-yr" data-en="2026">২০২৬</span></div>
+          <div class="info-card-title" data-en="Class Routine 2026">ক্লাস রুটিন ২০২৬</div>
           <div class="info-actions">
-            <a href="#" class="info-btn">View</a>
-            <a href="#" class="info-btn info-btn-solid">Download</a>
+            <a href="#" class="info-btn" data-en="View">দেখুন</a>
+            <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
           </div>
         </div>
 
-        <!-- CARD 4 -->
         <div class="info-card">
-          <div class="info-date"><span class="info-date-md">08-27</span><span class="info-date-yr">2026</span></div>
-          <div class="info-card-title">Application Form Download</div>
+          <div class="info-date"><span class="info-date-md" data-en="01-10">০১-১০</span><span class="info-date-yr" data-en="2026">২০২৬</span></div>
+          <div class="info-card-title" data-en="Admission Form 2027">ভর্তি ফর্ম ২০২৭</div>
           <div class="info-actions">
-            <a href="#" class="info-btn">View</a>
-            <a href="#" class="info-btn info-btn-solid">Download</a>
+            <a href="#" class="info-btn" data-en="View">দেখুন</a>
+            <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
           </div>
         </div>
 
@@ -209,24 +211,23 @@
     </div>
   </section>
 
-    <!-- OUR TEACHERS -->
+  <!-- OUR TEACHERS -->
   <section class="section">
     <div class="wrap">
       <div class="team-heading">
-        <span class="eyebrow center">Faculty</span>
-        <h2>Our Teachers</h2>
+        <span class="eyebrow center" data-en="Faculty">শিক্ষকমণ্ডলী</span>
+        <h2 data-en="Our Teachers">আমাদের শিক্ষকরা</h2>
         <div class="team-divider"><span></span><i></i><span></span></div>
       </div>
 
       <div class="teacher-carousel-wrap">
-        <button class="carousel-btn prev" aria-label="Scroll left">&#8249;</button>
+        <button class="carousel-btn prev" aria-label="আগেরটা" data-en-aria-label="Scroll left">&#8249;</button>
         <div class="teacher-carousel">
-
           <div class="team-card">
-            <div class="team-photo" style="background:#122040;">MH</div>
+            <div class="team-photo" style="background-color:#122040;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Marcus Halloway</h3>
-              <span class="team-role">Physics</span>
+              <h3 data-en="Md. Rafiqul Islam">মোঃ রফিকুল ইসলাম</h3>
+              <span class="team-role" data-en="Physics">পদার্থবিজ্ঞান</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -237,10 +238,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#A63A32;">RS</div>
+            <div class="team-photo" style="background-color:#A63A32;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Rina Sato</h3>
-              <span class="team-role">Biology</span>
+              <h3 data-en="Farhana Akter">ফারহানা আক্তার</h3>
+              <span class="team-role" data-en="Biology">জীববিজ্ঞান</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -251,10 +252,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#2F4F3E;">DO</div>
+            <div class="team-photo" style="background-color:#2F4F3E;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>David Okafor</h3>
-              <span class="team-role">History</span>
+              <h3 data-en="Subrata Kumar Das">সুব্রত কুমার দাস</h3>
+              <span class="team-role" data-en="Chemistry">রসায়ন</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -265,10 +266,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#B98A36;">EL</div>
+            <div class="team-photo" style="background-color:#B98A36;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Elena Larsen</h3>
-              <span class="team-role">English Literature</span>
+              <h3 data-en="Nasima Begum">নাসিমা বেগম</h3>
+              <span class="team-role" data-en="Bangla">বাংলা</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -279,10 +280,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#122040;">TW</div>
+            <div class="team-photo" style="background-color:#122040;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Thomas Weiss</h3>
-              <span class="team-role">Mathematics</span>
+              <h3 data-en="Tanvir Ahmed">তানভীর আহমেদ</h3>
+              <span class="team-role" data-en="Mathematics">গণিত</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -293,10 +294,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#A63A32;">AN</div>
+            <div class="team-photo" style="background-color:#A63A32;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Aisha Noor</h3>
-              <span class="team-role">Mathematics</span>
+              <h3 data-en="Sharmin Sultana">শারমিন সুলতানা</h3>
+              <span class="team-role" data-en="Higher Mathematics">উচ্চতর গণিত</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -307,10 +308,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#2F4F3E;">JC</div>
+            <div class="team-photo" style="background-color:#2F4F3E;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>James Carrick</h3>
-              <span class="team-role">Design &amp; Making</span>
+              <h3 data-en="Abdullah Al Mamun">আব্দুল্লাহ আল মামুন</h3>
+              <span class="team-role" data-en="English">ইংরেজি</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -321,10 +322,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#B98A36;">MV</div>
+            <div class="team-photo" style="background-color:#B98A36;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Mireille Vidal</h3>
-              <span class="team-role">French</span>
+              <h3 data-en="Rumana Yasmin">রুমানা ইয়াসমিন</h3>
+              <span class="team-role" data-en="English">ইংরেজি</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -335,10 +336,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#122040;">LZ</div>
+            <div class="team-photo" style="background-color:#122040;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Li Zhang</h3>
-              <span class="team-role">Mandarin</span>
+              <h3 data-en="Mahmudul Hasan">মাহমুদুল হাসান</h3>
+              <span class="team-role" data-en="ICT">আইসিটি</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -349,10 +350,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#A63A32;">SB</div>
+            <div class="team-photo" style="background-color:#A63A32;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Sofia Bianchi</h3>
-              <span class="team-role">Theater &amp; Arts</span>
+              <h3 data-en="Dipika Rani Sarkar">দীপিকা রানী সরকার</h3>
+              <span class="team-role" data-en="Accounting">হিসাববিজ্ঞান</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -363,10 +364,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#2F4F3E;">KP</div>
+            <div class="team-photo" style="background-color:#2F4F3E;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Kwame Peterson</h3>
-              <span class="team-role">Choir &amp; Jazz</span>
+              <h3 data-en="Kamrul Hasan">কামরুল হাসান</h3>
+              <span class="team-role" data-en="Business Entrepreneurship">ব্যবসায় উদ্যোগ</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -377,10 +378,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#B98A36;">NG</div>
+            <div class="team-photo" style="background-color:#B98A36;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Nadia Gómez</h3>
-              <span class="team-role">Chemistry</span>
+              <h3 data-en="Sabina Yasmin">সাবিনা ইয়াসমিন</h3>
+              <span class="team-role" data-en="Bangladesh &amp; Global Studies">বাংলাদেশ ও বিশ্বপরিচয়</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -391,10 +392,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#122040;">OF</div>
+            <div class="team-photo" style="background-color:#122040;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Owen Fitzgerald</h3>
-              <span class="team-role">Computer Science</span>
+              <h3 data-en="Abu Taher">আবু তাহের</h3>
+              <span class="team-role" data-en="Islam &amp; Moral Education">ইসলাম ও নৈতিক শিক্ষা</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -405,10 +406,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#A63A32;">PC</div>
+            <div class="team-photo" style="background-color:#A63A32;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Priya Chandran</h3>
-              <span class="team-role">Economics</span>
+              <h3 data-en="Anita Roy">অনিতা রায়</h3>
+              <span class="team-role" data-en="Arts &amp; Crafts">চারু ও কারুকলা</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -419,10 +420,10 @@
           </div>
 
           <div class="team-card">
-            <div class="team-photo" style="background:#2F4F3E;">DA</div>
+            <div class="team-photo" style="background-color:#2F4F3E;" aria-hidden="true"></div>
             <div class="team-body">
-              <h3>Diego Alvarez</h3>
-              <span class="team-role">Physical Education</span>
+              <h3 data-en="Zahidul Islam">জাহিদুল ইসলাম</h3>
+              <span class="team-role" data-en="Physical Education">শারীরিক শিক্ষা</span>
               <div class="team-social">
                 <a href="#" aria-label="Facebook">f</a>
                 <a href="#" aria-label="Twitter">t</a>
@@ -431,9 +432,8 @@
               </div>
             </div>
           </div>
-
         </div>
-        <button class="carousel-btn next" aria-label="Scroll right">&#8250;</button>
+        <button class="carousel-btn next" aria-label="পরেরটা" data-en-aria-label="Scroll right">&#8250;</button>
       </div>
     </div>
   </section>
@@ -442,43 +442,43 @@
   <section class="section">
     <div class="wrap">
       <div class="quote-block">
-        <blockquote>"My advisor still remembers a paper I wrote in 9th grade. That's the kind of place this is."</blockquote>
-        <cite>— Priya N., Class of 2025</cite>
+        <blockquote data-en="&quot;My teacher still remembers an essay I wrote in Class 9. That's the kind of place this is.&quot;">"ক্লাস নাইনে লেখা আমার একটা রচনার কথা স্যার এখনো মনে রেখেছেন। এই স্কুলটা আসলে এমনই।"</blockquote>
+        <cite data-en="— Tasnim Rahman, SSC 2025">— তাসনিম রহমান, এসএসসি ২০২৫</cite>
       </div>
     </div>
   </section>
 
-  <!-- BLOG TEASER -->
+  <!-- NEWS TEASER -->
   <section class="section alt">
     <div class="wrap">
-      <span class="eyebrow">From the Blog</span>
-      <h2>Recent news from campus.</h2>
+      <span class="eyebrow" data-en="News &amp; Events">খবর ও ঘটনা</span>
+      <h2 data-en="Recent news from school.">স্কুলের সাম্প্রতিক খবর।</h2>
       <div class="blog-grid">
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1015/500/320" alt="">
+          <img src="images/ict-lab.jpg" alt="নতুন আইসিটি ল্যাবে কম্পিউটারে কাজ করছে শিক্ষার্থীরা" data-en-alt="Students working in the new ICT lab" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-date">Aug 12, 2026</span>
-            <h3>Robotics Team Heads to State Finals</h3>
-            <p>Six students, one very stubborn arm actuator, and a qualifying run nobody saw coming.</p>
-            <a class="more" href="blog.html">Read more →</a>
+            <span class="blog-date" data-en="20 October 2026">২০ অক্টোবর ২০২৬</span>
+            <h3 data-en="New ICT Lab Opens With 40 Computers">নতুন আইসিটি ল্যাব চালু, এখন ৪০টি কম্পিউটার</h3>
+            <p data-en="Forty students can now take class together in the new computer lab, with high-speed internet too.">নতুন কম্পিউটার ল্যাবে এখন একসাথে ৪০ জন ক্লাস করতে পারবে, সাথে আছে হাই-স্পিড ইন্টারনেট।</p>
+            <a class="more" href="blog.html" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1024/500/320" alt="">
+          <img src="images/liberation-war-corner.jpg" alt="পাঠাগারের মুক্তিযুদ্ধ কর্নারে পড়ছে শিক্ষার্থীরা" data-en-alt="Students reading at the Liberation War corner in the library" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-date">Jul 30, 2026</span>
-            <h3>Notes From the Fall Expedition Planning Meeting</h3>
-            <p>This year's 9th grade trip swaps the ridge trail for a new route along Millbrook Creek.</p>
-            <a class="more" href="blog.html">Read more →</a>
+            <span class="blog-date" data-en="8 September 2026">৮ সেপ্টেম্বর ২০২৬</span>
+            <h3 data-en="Library Opens a Liberation War Corner">পাঠাগারে চালু হলো মুক্তিযুদ্ধ কর্নার</h3>
+            <p data-en="A dedicated corner of books, photos, and documents about the 1971 Liberation War.">মুক্তিযুদ্ধের বই, ছবি আর দলিলপত্র নিয়ে পাঠাগারে খোলা হয়েছে আলাদা একটা কর্নার।</p>
+            <a class="more" href="blog.html" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1039/500/320" alt="">
+          <img src="images/result-celebration.jpg" alt="এসএসসির রেজাল্ট পেয়ে আনন্দ করছে শিক্ষার্থীরা" data-en-alt="Students celebrating their SSC results" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-date">Jul 14, 2026</span>
-            <h3>Summer Faculty Reading List</h3>
-            <p>What eleven Ridgeview teachers are reading before the new term starts.</p>
-            <a class="more" href="blog.html">Read more →</a>
+            <span class="blog-date" data-en="10 July 2026">১০ জুলাই ২০২৬</span>
+            <h3 data-en="SSC 2026: 98.6% Pass, 72 GPA-5s">এসএসসি ২০২৬: ৯৮.৬% পাস, জিপিএ-৫ পেল ৭২ জন</h3>
+            <p data-en="Our best SSC result ever — the whole campus turned into a celebration on result day.">আমাদের ইতিহাসে এসএসসির সেরা রেজাল্ট। রেজাল্টের দিন পুরো ক্যাম্পাস যেন উৎসবে মেতে উঠেছিল।</p>
+            <a class="more" href="blog.html" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
       </div>
@@ -490,10 +490,10 @@
     <div class="wrap">
       <div class="cta-banner">
         <div>
-          <h3>Applications for Fall 2027 open September 1.</h3>
-          <p>Need-based financial aid covers up to 100% of tuition.</p>
+          <h3 data-en="Admissions are open for the 2027 session.">২০২৭ শিক্ষাবর্ষে ভর্তি চলছে।</h3>
+          <p data-en="Full and partial free studentship is available for bright students from low-income families.">মেধাবী ও অসচ্ছল পরিবারের শিক্ষার্থীদের জন্য আছে পূর্ণ ও আংশিক বিনা বেতনে পড়ার সুযোগ।</p>
         </div>
-        <a href="contact.html" class="btn btn-ghost-light">Request Info</a>
+        <a href="contact.html" class="btn btn-ghost-light" data-en="Get in Touch">যোগাযোগ করুন</a>
       </div>
     </div>
   </section>
@@ -504,35 +504,35 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>Ridgeview Academy</h4>
-        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+        <h4 data-en="Alokito Model School &amp; College">আলোকিত মডেল স্কুল অ্যান্ড কলেজ</h4>
+        <p data-en="Class 6 to 12 — helping students learn to think for themselves since 1978.">ষষ্ঠ থেকে দ্বাদশ শ্রেণি — ১৯৭৮ সাল থেকে আমরা শিক্ষার্থীদের নিজের মতো করে ভাবতে শেখাচ্ছি।</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="history.html">Our History</a>
-        <a href="teachers.html">Our Teachers</a>
-        <a href="students.html">Our Students</a>
-        <a href="results.html">Exam Results</a>
+        <h4 data-en="Explore">ঘুরে দেখুন</h4>
+        <a href="history.html" data-en="Our History">আমাদের ইতিহাস</a>
+        <a href="teachers.html" data-en="Our Teachers">আমাদের শিক্ষক</a>
+        <a href="students.html" data-en="Our Students">শিক্ষার্থী</a>
+        <a href="results.html" data-en="Exam Results">পরীক্ষার ফলাফল</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-en="School">প্রতিষ্ঠান</h4>
+        <a href="about.html" data-en="About Us">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর ও ঘটনা</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </div>
       <div>
-        <h4>Visit</h4>
-        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
-        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+        <h4 data-en="Visit">ঠিকানা</h4>
+        <p data-en="12/A College Road, Mirpur-10<br>Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০<br>ঢাকা-১২১৬</p>
+        <p data-en="info@yourschool.edu.bd<br>01700-000000">info@yourschool.edu.bd<br>০১৭০০-০০০০০০</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
-      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+      <span data-en="© 2026 Alokito Model School &amp; College. All rights reserved.">© ২০২৬ আলোকিত মডেল স্কুল অ্যান্ড কলেজ। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span><span data-en="Demo site · Photos:">ডেমো সাইট · ছবি:</span> <a href="images/CREDITS.md" data-en="Wikimedia Commons contributors">উইকিমিডিয়া কমন্স</a></span>
     </div>
   </div>
 </footer>
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
 <script src="script.js"></script>
 </body>
 </html>

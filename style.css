@@ -1,7 +1,8 @@
 /* ===========================================================
-   RIDGEVIEW ACADEMY — shared stylesheet (used by every page)
+   SCHOOL SITE — shared stylesheet (used by every page)
    Palette : navy #122040 · gold #D9A441 · brick #A63A32 · forest #2F4F3E
    Type    : Fraunces (display) / Inter (body) / IBM Plex Mono (utility)
+             Bengali: Noto Serif Bengali (display) / Hind Siliguri (body)
 =========================================================== */
 
 :root{
@@ -21,9 +22,9 @@
   --shadow: 0 14px 34px rgba(18,32,64,0.10);
   --shadow-sm: 0 4px 14px rgba(18,32,64,0.07);
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  --font-display: "Fraunces", "Noto Serif Bengali", Georgia, serif;
+  --font-body: "Inter", "Hind Siliguri", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", "Hind Siliguri", monospace;
 }
 
 *{ box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,7 +36,7 @@ body{
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-img{ max-width: 100%; display: block; }
+img{ max-width: 100%; height: auto; display: block; }
 a{ color: inherit; text-decoration: none; }
 ul{ list-style: none; }
 button{ font-family: inherit; cursor: pointer; }
@@ -146,7 +147,7 @@ p{ color: var(--ink-soft); }
 .hero-copy{ max-width: 46ch; margin: 1.3rem 0 2rem; font-size: 1.05rem; }
 .hero-actions{ display: flex; gap: 1rem; flex-wrap: wrap; }
 .hero-media{ position: relative; }
-.hero-media img{ border-radius: var(--radius); box-shadow: var(--shadow); }
+.hero-media img{ width: 100%; aspect-ratio: 5/4; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
 .hero-float-card{
   position: absolute; left: -1.4rem; bottom: -1.4rem;
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
@@ -168,7 +169,7 @@ p{ color: var(--ink-soft); }
 /* ---------- information / downloads (fixed dark background) ---------- */
 .info-section{
   position: relative;
-  background-image: url("https://picsum.photos/id/24/1600/1000");
+  background-image: url("images/info-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -511,14 +512,17 @@ tbody tr{ border-bottom: 1px solid var(--line); }
   .testimonial-grid, .stats-bar, .results-stats, .form-grid{ grid-template-columns: repeat(2,1fr); }
   .footer-grid{ grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 720px){
+@media (max-width: 1120px){
+  .header-inner{ gap: 1rem; }
   .main-nav{
     position: absolute; top: 100%; left: 0; right: 0; background: var(--paper);
     flex-direction: column; padding: 1rem 2rem; border-bottom: 1px solid var(--line);
     display: none; gap: 1rem;
   }
   .main-nav.open{ display: flex; }
-  .nav-toggle{ display: block; }
+  .nav-toggle{ display: block; order: 5; }
+}
+@media (max-width: 720px){
   .card-grid, .dept-grid, .life-grid, .teacher-grid, .steps, .leader-grid, .blog-grid, .gallery-grid,
   .testimonial-grid, .stats-bar, .results-stats, .form-grid{ grid-template-columns: 1fr; }
   .block-lg{ grid-column: span 1; }
@@ -555,4 +559,122 @@ tbody tr{ border-bottom: 1px solid var(--line); }
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior: auto; }
   .btn, .link-card{ transition: none; }
+}
+
+/* ---------- language switcher ---------- */
+.lang-switch{
+  display: inline-flex; flex-shrink: 0;
+  border: 1px solid var(--line); border-radius: 20px; padding: 3px; background: var(--paper);
+}
+.lang-switch button{
+  border: none; background: transparent; color: var(--ink-soft);
+  font-size: 0.8rem; font-weight: 600; line-height: 1; padding: 0.45rem 0.75rem; border-radius: 16px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.lang-switch button[lang="bn"]{ font-family: "Hind Siliguri", var(--font-body); }
+.lang-switch button[lang="en"]{ font-family: var(--font-mono); letter-spacing: 0.04em; }
+.lang-switch button:hover{ color: var(--navy); }
+.lang-switch button[aria-pressed="true"]{ background: var(--navy); color: var(--paper); }
+.lang-switch button:focus-visible{ outline: 2px solid var(--gold); outline-offset: 1px; }
+
+/* Avoid a flash of Bengali for visitors who picked English (set in <head>, cleared by script.js) */
+html.lang-pending body{ visibility: hidden; }
+
+/* ---------- person placeholders (swap for real photos) ---------- */
+.avatar, .team-photo{
+  background-color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FAF9F6' fill-opacity='0.82'%3E%3Ccircle cx='12' cy='8.2' r='4.3'/%3E%3Cpath d='M3.2 23c0-5 3.9-8.6 8.8-8.6s8.8 3.6 8.8 8.6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 72%;
+}
+.team-photo{ background-size: 62%; }
+
+/* ---------- map embed ---------- */
+.map-box{ height: 240px; padding: 0; overflow: hidden; border-style: solid; }
+.map-box iframe{ width: 100%; height: 100%; border: 0; display: block; }
+
+/* ---------- Bengali typography ---------- */
+html[lang="bn"] body{ line-height: 1.75; }
+html[lang="bn"] h1, html[lang="bn"] h2, html[lang="bn"] h3, html[lang="bn"] h4{ line-height: 1.4; }
+html[lang="bn"] .hero h1{ max-width: 15ch; }
+html[lang="bn"] p{ font-size: 1.02em; }
+/* Small mono labels: Bengali conjuncts need more size and no tracking */
+html[lang="bn"] .eyebrow,
+html[lang="bn"] .btn,
+html[lang="bn"] .stat-label,
+html[lang="bn"] .hero-float-card,
+html[lang="bn"] .announcement-label,
+html[lang="bn"] .marquee-track span,
+html[lang="bn"] .info-btn,
+html[lang="bn"] .info-date,
+html[lang="bn"] .team-role,
+html[lang="bn"] .message-name,
+html[lang="bn"] .link-card a.more,
+html[lang="bn"] .blog-card a.more,
+html[lang="bn"] .blog-date,
+html[lang="bn"] .blog-tag,
+html[lang="bn"] .quote-block cite,
+html[lang="bn"] .testimonial-card cite,
+html[lang="bn"] .timeline-year,
+html[lang="bn"] .filter-btn,
+html[lang="bn"] .teacher-dept,
+html[lang="bn"] .teacher-years,
+html[lang="bn"] .leader-role,
+html[lang="bn"] .badge,
+html[lang="bn"] .table-note,
+html[lang="bn"] .breadcrumb,
+html[lang="bn"] .form-field label,
+html[lang="bn"] .form-note,
+html[lang="bn"] .footer-grid h4,
+html[lang="bn"] .footer-bottom{
+  font-family: "Hind Siliguri", var(--font-body);
+  letter-spacing: 0;
+}
+html[lang="bn"] .eyebrow{ font-size: 0.9rem; font-weight: 600; }
+html[lang="bn"] .btn{ font-size: 0.92rem; font-weight: 600; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+html[lang="bn"] .btn-nav{ padding: 0.5rem 1.05rem; }
+html[lang="bn"] .stat-label{ font-size: 0.86rem; }
+html[lang="bn"] .hero-float-card{ font-size: 0.9rem; line-height: 1.5; }
+html[lang="bn"] .hero-float-card strong{ font-size: 1.45rem; }
+html[lang="bn"] .announcement-label{ font-size: 0.88rem; font-weight: 600; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+html[lang="bn"] .marquee-track span{ font-size: 0.95rem; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+html[lang="bn"] .info-btn{ font-size: 0.85rem; }
+html[lang="bn"] .info-date-md{ font-size: 0.85rem; }
+html[lang="bn"] .info-date-yr{ font-size: 0.72rem; }
+html[lang="bn"] .team-role,
+html[lang="bn"] .teacher-dept,
+html[lang="bn"] .leader-role,
+html[lang="bn"] .teacher-years,
+html[lang="bn"] .blog-date,
+html[lang="bn"] .blog-tag,
+html[lang="bn"] .badge,
+html[lang="bn"] .filter-btn,
+html[lang="bn"] .form-field label{ font-size: 0.86rem; }
+html[lang="bn"] .message-name,
+html[lang="bn"] .link-card a.more,
+html[lang="bn"] .blog-card a.more,
+html[lang="bn"] .quote-block cite,
+html[lang="bn"] .testimonial-card cite,
+html[lang="bn"] .timeline-year,
+html[lang="bn"] .table-note,
+html[lang="bn"] .breadcrumb,
+html[lang="bn"] .form-note{ font-size: 0.9rem; }
+html[lang="bn"] .footer-grid h4{ font-size: 1rem; }
+html[lang="bn"] .footer-bottom{ font-size: 0.82rem; }
+html[lang="bn"] .main-nav a{ font-size: 0.95rem; }
+html[lang="bn"] .brand-name{ font-size: 0.92rem; line-height: 1.3; }
+html[lang="bn"] .message-card p,
+html[lang="bn"] .testimonial-card p,
+html[lang="bn"] .quote-block blockquote{ font-style: normal; }
+
+@media (max-width: 520px){
+  .btn-nav{ display: none; }
+  .header-inner{ padding-left: 1rem; padding-right: 1rem; }
+  .wrap{ padding: 0 1rem; }
+}
+@media (max-width: 720px){
+  .stats-bar{ grid-template-columns: repeat(2, 1fr); }
+  .stats-bar .stat:nth-child(odd){ border-left: none; }
+  .stats-bar .stat:nth-child(n+3){ border-top: 1px solid var(--line); }
 }

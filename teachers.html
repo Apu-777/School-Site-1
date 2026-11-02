@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Teachers — Ridgeview Academy</title>
+<script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+<title data-en="Teachers — Alokito Model School &amp; College">শিক্ষকমণ্ডলী — আলোকিত মডেল স্কুল অ্যান্ড কলেজ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,24 +15,28 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
         <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
       </svg>
-      <span class="brand-name">Ridgeview<br>Academy</span>
+      <span class="brand-name" data-en="Alokito Model<br>School &amp; College">আলোকিত মডেল<br>স্কুল অ্যান্ড কলেজ</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <button class="nav-toggle" aria-label="মেনু খুলুন" data-en-aria-label="Toggle menu"><span></span></button>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="teachers.html" class="active">Teachers</a>
-      <a href="students.html">Students</a>
-      <a href="results.html">Exam Results</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-en="Home">হোম</a>
+      <a href="history.html" data-en="History">ইতিহাস</a>
+      <a href="teachers.html" class="active" data-en="Teachers">শিক্ষক</a>
+      <a href="students.html" data-en="Students">শিক্ষার্থী</a>
+      <a href="results.html" data-en="Exam Results">ফলাফল</a>
+      <a href="about.html" data-en="About">আমাদের কথা</a>
+      <a href="blog.html" data-en="News">খবর</a>
+      <a href="contact.html" data-en="Contact">যোগাযোগ</a>
     </nav>
-    <a href="contact.html" class="btn btn-nav">Enquire</a>
+    <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন / Choose language">
+      <button type="button" data-lang="bn" aria-pressed="true" lang="bn">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-nav" data-en="Admission">ভর্তি তথ্য</a>
   </div>
 </header>
 
@@ -38,120 +44,136 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Teachers</div>
-      <h1>Faculty who chose to stay.</h1>
-      <p>Average teacher tenure at Ridgeview is 11 years. Every teacher below also advises, coaches, or runs a club outside the classroom.</p>
+      <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Teachers">শিক্ষক</span></div>
+      <h1 data-en="Experienced teachers who truly care.">অভিজ্ঞ আর আন্তরিক শিক্ষকমণ্ডলী।</h1>
+      <p data-en="On average, our teachers have been teaching here for 11 years. Outside class, every one of them also looks after a club, a sport, or another activity.">আমাদের শিক্ষকরা গড়ে ১১ বছর ধরে এখানে পড়াচ্ছেন। ক্লাসের বাইরেও প্রত্যেকে কোনো না কোনো ক্লাব, খেলা বা সহশিক্ষা কার্যক্রমের দায়িত্বে আছেন।</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
       <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All Departments</button>
-        <button class="filter-btn" data-filter="sciences">Sciences</button>
-        <button class="filter-btn" data-filter="humanities">Humanities</button>
-        <button class="filter-btn" data-filter="mathematics">Mathematics</button>
-        <button class="filter-btn" data-filter="design">Design &amp; Making</button>
-        <button class="filter-btn" data-filter="languages">World Languages</button>
-        <button class="filter-btn" data-filter="arts">Arts</button>
+        <button class="filter-btn active" data-filter="all" data-en="All Departments">সব বিভাগ</button>
+        <button class="filter-btn" data-filter="sciences" data-en="Science">বিজ্ঞান</button>
+        <button class="filter-btn" data-filter="mathematics" data-en="Mathematics">গণিত</button>
+        <button class="filter-btn" data-filter="humanities" data-en="Humanities">মানবিক</button>
+        <button class="filter-btn" data-filter="business" data-en="Business Studies">ব্যবসায় শিক্ষা</button>
+        <button class="filter-btn" data-filter="languages" data-en="Languages">ভাষা</button>
+        <button class="filter-btn" data-filter="arts" data-en="Co-curricular">সহশিক্ষা</button>
       </div>
 
       <div class="teacher-grid">
 
         <div class="teacher-card" data-dept="sciences">
-          <div class="avatar" style="background:#2F4F3E;">MH</div>
-          <span class="teacher-dept">Sciences</span>
-          <h3>Marcus Halloway</h3>
-          <p>Department chair and physics teacher. Runs the senior research seminar with the state university's materials lab.</p>
-          <span class="teacher-years">At Ridgeview since 2009</span>
+          <div class="avatar" style="background-color:#2F4F3E;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Science · Physics">বিজ্ঞান · পদার্থবিজ্ঞান</span>
+          <h3 data-en="Md. Rafiqul Islam">মোঃ রফিকুল ইসলাম</h3>
+          <p data-en="Head of the science department. Advises the science club, which has won the district science fair three times under his guidance.">বিজ্ঞান বিভাগের প্রধান। বিজ্ঞান ক্লাবের উপদেষ্টা — তাঁর হাত ধরে স্কুল তিনবার জেলা বিজ্ঞান মেলায় প্রথম হয়েছে।</p>
+          <span class="teacher-years" data-en="At Alokito since 2009">২০০৯ সাল থেকে এই স্কুলে</span>
         </div>
 
         <div class="teacher-card" data-dept="sciences">
-          <div class="avatar" style="background:#2F4F3E;">RS</div>
-          <span class="teacher-dept">Sciences</span>
-          <h3>Rina Sato</h3>
-          <p>Teaches biology and environmental science. Leads the campus native-plants restoration project.</p>
-          <span class="teacher-years">At Ridgeview since 2015</span>
-        </div>
-
-        <div class="teacher-card" data-dept="humanities">
-          <div class="avatar" style="background:#A63A32;">DO</div>
-          <span class="teacher-dept">Humanities</span>
-          <h3>David Okafor</h3>
-          <p>Teaches U.S. and world history as seminar discussion from 9th grade on. Coaches debate.</p>
-          <span class="teacher-years">At Ridgeview since 2012</span>
-        </div>
-
-        <div class="teacher-card" data-dept="humanities">
-          <div class="avatar" style="background:#A63A32;">EL</div>
-          <span class="teacher-dept">Humanities</span>
-          <h3>Elena Larsen</h3>
-          <p>English literature. Editor of the student literary magazine, now in its 14th year.</p>
-          <span class="teacher-years">At Ridgeview since 2018</span>
-        </div>
-
-        <div class="teacher-card" data-dept="mathematics">
-          <div class="avatar" style="background:#122040;">TW</div>
-          <span class="teacher-dept">Mathematics</span>
-          <h3>Thomas Weiss</h3>
-          <p>Runs the proof-writing track and coaches the math team to three regional finals since 2020.</p>
-          <span class="teacher-years">At Ridgeview since 2011</span>
-        </div>
-
-        <div class="teacher-card" data-dept="mathematics">
-          <div class="avatar" style="background:#122040;">AN</div>
-          <span class="teacher-dept">Mathematics</span>
-          <h3>Aisha Noor</h3>
-          <p>Teaches algebra through pre-calculus with an emphasis on real-world modeling projects.</p>
-          <span class="teacher-years">At Ridgeview since 2021</span>
-        </div>
-
-        <div class="teacher-card" data-dept="design">
-          <div class="avatar" style="background:#B98A36;">JC</div>
-          <span class="teacher-dept">Design &amp; Making</span>
-          <h3>James Carrick</h3>
-          <p>Runs the fabrication lab and the student-operated 3D-print farm. Formerly a furniture maker.</p>
-          <span class="teacher-years">At Ridgeview since 2016</span>
-        </div>
-
-        <div class="teacher-card" data-dept="languages">
-          <div class="avatar" style="background:#2F4F3E;">MV</div>
-          <span class="teacher-dept">World Languages</span>
-          <h3>Mireille Vidal</h3>
-          <p>Teaches French and organizes the 11th grade immersion term in Quebec.</p>
-          <span class="teacher-years">At Ridgeview since 2013</span>
-        </div>
-
-        <div class="teacher-card" data-dept="languages">
-          <div class="avatar" style="background:#2F4F3E;">LZ</div>
-          <span class="teacher-dept">World Languages</span>
-          <h3>Li Zhang</h3>
-          <p>Teaches Mandarin across all levels and leads the annual Lunar New Year campus event.</p>
-          <span class="teacher-years">At Ridgeview since 2019</span>
-        </div>
-
-        <div class="teacher-card" data-dept="arts">
-          <div class="avatar" style="background:#A63A32;">SB</div>
-          <span class="teacher-dept">Arts</span>
-          <h3>Sofia Bianchi</h3>
-          <p>Directs the black-box theater program and its three student-directed productions each year.</p>
-          <span class="teacher-years">At Ridgeview since 2014</span>
-        </div>
-
-        <div class="teacher-card" data-dept="arts">
-          <div class="avatar" style="background:#A63A32;">KP</div>
-          <span class="teacher-dept">Arts</span>
-          <h3>Kwame Peterson</h3>
-          <p>Leads choir and jazz ensemble. Started the student songwriting elective in 2022.</p>
-          <span class="teacher-years">At Ridgeview since 2017</span>
+          <div class="avatar" style="background-color:#2F4F3E;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Science · Biology">বিজ্ঞান · জীববিজ্ঞান</span>
+          <h3 data-en="Farhana Akter">ফারহানা আক্তার</h3>
+          <p data-en="Teaches biology and runs the green campus and tree-planting programme.">জীববিজ্ঞান পড়ান। স্কুলের সবুজ ক্যাম্পাস আর গাছ লাগানো কর্মসূচির দায়িত্বে আছেন।</p>
+          <span class="teacher-years" data-en="At Alokito since 2015">২০১৫ সাল থেকে এই স্কুলে</span>
         </div>
 
         <div class="teacher-card" data-dept="sciences">
-          <div class="avatar" style="background:#2F4F3E;">NG</div>
-          <span class="teacher-dept">Sciences</span>
-          <h3>Nadia Gómez</h3>
-          <p>Chemistry teacher and safety officer for all lab spaces on campus.</p>
-          <span class="teacher-years">At Ridgeview since 2020</span>
+          <div class="avatar" style="background-color:#2F4F3E;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Science · Chemistry">বিজ্ঞান · রসায়ন</span>
+          <h3 data-en="Subrata Kumar Das">সুব্রত কুমার দাস</h3>
+          <p data-en="Teaches chemistry and is in charge of lab safety and all practical classes.">রসায়ন পড়ান। বিজ্ঞানাগারের নিরাপত্তা আর ব্যবহারিক ক্লাসের দায়িত্বও তাঁর।</p>
+          <span class="teacher-years" data-en="At Alokito since 2020">২০২০ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="sciences">
+          <div class="avatar" style="background-color:#2F4F3E;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Science · ICT">বিজ্ঞান · আইসিটি</span>
+          <h3 data-en="Mahmudul Hasan">মাহমুদুল হাসান</h3>
+          <p data-en="Teaches ICT and looks after the computer lab and the school website.">আইসিটি পড়ান। কম্পিউটার ল্যাব আর স্কুলের ওয়েবসাইট দেখাশোনা করেন।</p>
+          <span class="teacher-years" data-en="At Alokito since 2020">২০২০ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="mathematics">
+          <div class="avatar" style="background-color:#122040;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Mathematics">গণিত</span>
+          <h3 data-en="Tanvir Ahmed">তানভীর আহমেদ</h3>
+          <p data-en="Teaches mathematics and coaches the Math Olympiad team, which has won divisional prizes three times since 2020.">গণিত পড়ান। গণিত অলিম্পিয়াড দলের কোচ — ২০২০ সাল থেকে দলটা তিনবার বিভাগীয় পর্বে পুরস্কার পেয়েছে।</p>
+          <span class="teacher-years" data-en="At Alokito since 2011">২০১১ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="mathematics">
+          <div class="avatar" style="background-color:#122040;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Higher Mathematics">উচ্চতর গণিত</span>
+          <h3 data-en="Sharmin Sultana">শারমিন সুলতানা</h3>
+          <p data-en="Teaches higher mathematics. Nobody explains maths with real-life examples quite like her.">উচ্চতর গণিত পড়ান। বাস্তব জীবনের উদাহরণ দিয়ে অঙ্ক বোঝাতে তাঁর জুড়ি নেই।</p>
+          <span class="teacher-years" data-en="At Alokito since 2021">২০২১ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="humanities">
+          <div class="avatar" style="background-color:#A63A32;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Humanities">মানবিক</span>
+          <h3 data-en="Sabina Yasmin">সাবিনা ইয়াসমিন</h3>
+          <p data-en="Teaches Bangladesh &amp; Global Studies and history. Coaches the debate club.">বাংলাদেশ ও বিশ্বপরিচয় আর ইতিহাস পড়ান। বিতর্ক ক্লাবের কোচ।</p>
+          <span class="teacher-years" data-en="At Alokito since 2012">২০১২ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="humanities">
+          <div class="avatar" style="background-color:#A63A32;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Religion &amp; Moral Education">ধর্ম ও নৈতিক শিক্ষা</span>
+          <h3 data-en="Abu Taher">আবু তাহের</h3>
+          <p data-en="Teaches Islam &amp; Moral Education and also gives time to student counselling.">ইসলাম ও নৈতিক শিক্ষা পড়ান। শিক্ষার্থীদের কাউন্সেলিংয়েও সময় দেন।</p>
+          <span class="teacher-years" data-en="At Alokito since 2011">২০১১ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="business">
+          <div class="avatar" style="background-color:#B98A36;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Business Studies · Accounting">ব্যবসায় শিক্ষা · হিসাববিজ্ঞান</span>
+          <h3 data-en="Dipika Rani Sarkar">দীপিকা রানী সরকার</h3>
+          <p data-en="Teaches accounting and shows business students how to keep real books, hands-on.">হিসাববিজ্ঞান পড়ান। ব্যবসায় শিক্ষা শাখার শিক্ষার্থীদের হাতে-কলমে হিসাব রাখা শেখান।</p>
+          <span class="teacher-years" data-en="At Alokito since 2016">২০১৬ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="business">
+          <div class="avatar" style="background-color:#B98A36;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Business Studies · Entrepreneurship">ব্যবসায় শিক্ষা · ব্যবসায় উদ্যোগ</span>
+          <h3 data-en="Kamrul Hasan">কামরুল হাসান</h3>
+          <p data-en="Teaches business entrepreneurship and finance, and organises the school's yearly entrepreneur fair.">ব্যবসায় উদ্যোগ আর ফিন্যান্স পড়ান। প্রতি বছর স্কুলের "উদ্যোক্তা মেলা" তিনিই আয়োজন করেন।</p>
+          <span class="teacher-years" data-en="At Alokito since 2018">২০১৮ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="languages">
+          <div class="avatar" style="background-color:#2F4F3E;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Languages · Bangla">ভাষা · বাংলা</span>
+          <h3 data-en="Nasima Begum">নাসিমা বেগম</h3>
+          <p data-en="Teaches Bangla and edits the school's annual magazine &quot;Alor Pothe&quot;, now in its 14th issue.">বাংলা পড়ান। স্কুলের বার্ষিক ম্যাগাজিন "আলোর পথে" সম্পাদনা করেন — এবার বের হচ্ছে ১৪তম সংখ্যা।</p>
+          <span class="teacher-years" data-en="At Alokito since 2013">২০১৩ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="languages">
+          <div class="avatar" style="background-color:#2F4F3E;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Languages · English">ভাষা · ইংরেজি</span>
+          <h3 data-en="Abdullah Al Mamun">আব্দুল্লাহ আল মামুন</h3>
+          <p data-en="Teaches English and runs the English club and spoken English sessions.">ইংরেজি পড়ান। ইংলিশ ক্লাব আর স্পোকেন ইংলিশ সেশন চালান।</p>
+          <span class="teacher-years" data-en="At Alokito since 2019">২০১৯ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="arts">
+          <div class="avatar" style="background-color:#A63A32;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Co-curricular · Arts &amp; Crafts">সহশিক্ষা · চারু ও কারুকলা</span>
+          <h3 data-en="Anita Roy">অনিতা রায়</h3>
+          <p data-en="Teaches arts and crafts and looks after cultural programmes and the wall magazine.">চারু ও কারুকলা পড়ান। সাংস্কৃতিক অনুষ্ঠান আর দেয়াল পত্রিকার দায়িত্বে আছেন।</p>
+          <span class="teacher-years" data-en="At Alokito since 2014">২০১৪ সাল থেকে এই স্কুলে</span>
+        </div>
+
+        <div class="teacher-card" data-dept="arts">
+          <div class="avatar" style="background-color:#A63A32;" aria-hidden="true"></div>
+          <span class="teacher-dept" data-en="Co-curricular · Physical Education">সহশিক্ষা · শারীরিক শিক্ষা</span>
+          <h3 data-en="Zahidul Islam">জাহিদুল ইসলাম</h3>
+          <p data-en="Physical education teacher. Looks after the football and cricket teams and the annual sports day.">শারীরিক শিক্ষার শিক্ষক। ফুটবল আর ক্রিকেট দল, সাথে বার্ষিক ক্রীড়া প্রতিযোগিতা — সবই তাঁর দেখভালে।</p>
+          <span class="teacher-years" data-en="At Alokito since 2017">২০১৭ সাল থেকে এই স্কুলে</span>
         </div>
 
       </div>
@@ -164,35 +186,35 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>Ridgeview Academy</h4>
-        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+        <h4 data-en="Alokito Model School &amp; College">আলোকিত মডেল স্কুল অ্যান্ড কলেজ</h4>
+        <p data-en="Class 6 to 12 — helping students learn to think for themselves since 1978.">ষষ্ঠ থেকে দ্বাদশ শ্রেণি — ১৯৭৮ সাল থেকে আমরা শিক্ষার্থীদের নিজের মতো করে ভাবতে শেখাচ্ছি।</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="history.html">Our History</a>
-        <a href="teachers.html">Our Teachers</a>
-        <a href="students.html">Our Students</a>
-        <a href="results.html">Exam Results</a>
+        <h4 data-en="Explore">ঘুরে দেখুন</h4>
+        <a href="history.html" data-en="Our History">আমাদের ইতিহাস</a>
+        <a href="teachers.html" data-en="Our Teachers">আমাদের শিক্ষক</a>
+        <a href="students.html" data-en="Our Students">শিক্ষার্থী</a>
+        <a href="results.html" data-en="Exam Results">পরীক্ষার ফলাফল</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-en="School">প্রতিষ্ঠান</h4>
+        <a href="about.html" data-en="About Us">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর ও ঘটনা</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </div>
       <div>
-        <h4>Visit</h4>
-        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
-        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+        <h4 data-en="Visit">ঠিকানা</h4>
+        <p data-en="12/A College Road, Mirpur-10<br>Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০<br>ঢাকা-১২১৬</p>
+        <p data-en="info@yourschool.edu.bd<br>01700-000000">info@yourschool.edu.bd<br>০১৭০০-০০০০০০</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
-      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+      <span data-en="© 2026 Alokito Model School &amp; College. All rights reserved.">© ২০২৬ আলোকিত মডেল স্কুল অ্যান্ড কলেজ। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span><span data-en="Demo site · Photos:">ডেমো সাইট · ছবি:</span> <a href="images/CREDITS.md" data-en="Wikimedia Commons contributors">উইকিমিডিয়া কমন্স</a></span>
     </div>
   </div>
 </footer>
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
 <script src="script.js"></script>
 </body>
 </html>
