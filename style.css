@@ -573,14 +573,14 @@ tbody tr{ border-bottom: 1px solid var(--line); }
 html.lang-pending body{ visibility: hidden; }
 
 /* ---------- person placeholders (swap for real photos) ---------- */
-.avatar, .team-photo{
+.avatar, .team-photo, .head-photo, .teacher-photo{
   background-color: var(--navy);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FAF9F6' fill-opacity='0.82'%3E%3Ccircle cx='12' cy='8.2' r='4.3'/%3E%3Cpath d='M3.2 23c0-5 3.9-8.6 8.8-8.6s8.8 3.6 8.8 8.6z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 72%;
 }
-.team-photo{ background-size: 62%; }
+.team-photo, .head-photo, .teacher-photo{ background-size: 62%; }
 
 /* ---------- map embed ---------- */
 .map-box{ height: 240px; padding: 0; overflow: hidden; border-style: solid; }
@@ -681,8 +681,8 @@ html[lang="bn"] .quote-block blockquote{ font-style: normal; }
   background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold);
   border-radius: 0 0 var(--radius) var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm);
 }
-.head-photo img{
-  width: 100%; aspect-ratio: 4/5; object-fit: cover;
+.head-photo{
+  width: 100%; aspect-ratio: 4/5;
   border-radius: 6px; border: 4px solid var(--paper); outline: 1px solid var(--gold);
   box-shadow: var(--shadow-sm);
 }
@@ -705,21 +705,22 @@ html[lang="bn"] .quote-block blockquote{ font-style: normal; }
 .staff-subhead::before, .staff-subhead::after{ content: ""; flex: 1; height: 1px; background: var(--line); }
 .staff-more{ text-align: center; margin-top: 2rem; }
 
-/* home carousel cards with photos */
-.team-photo{ overflow: hidden; }
-.team-photo img{ width: 100%; height: 100%; object-fit: cover; }
+/* real teacher group photos (unnamed) */
+.staff-photos{
+  display: grid; grid-template-columns: 1.7fr 1fr; grid-template-rows: 190px 190px;
+  gap: 1rem; margin-bottom: 2.4rem;
+}
+.staff-photos figure{ margin: 0; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+.staff-photos .staff-photo-main{ grid-row: span 2; }
+.staff-photos img{ width: 100%; height: 100%; object-fit: cover; }
+
 .team-desig{ display: block; font-size: 0.82rem; font-weight: 600; color: var(--brick); margin-bottom: 0.1rem; }
 .team-role{ margin-bottom: 0; }
-
-/* round photos in message and leadership cards */
-.avatar-photo{ object-fit: cover; object-position: center top; background: var(--paper-dim); border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--gold); }
-.message-card .avatar-photo{ width: 76px; height: 76px; }
-.leader-card .avatar-photo{ width: 120px; height: 120px; }
 
 /* teachers page: passport-style photo cards */
 .teacher-card{ display: grid; grid-template-columns: 96px 1fr; gap: 1.1rem; align-items: start; }
 .teacher-photo{
-  width: 96px; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px;
+  width: 96px; aspect-ratio: 4/5; border-radius: 4px;
   border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--line), var(--shadow-sm);
 }
 .teacher-desig{ display: block; font-size: 0.8rem; color: var(--navy); font-weight: 500; margin-bottom: 0.5rem; }
@@ -734,6 +735,10 @@ html[lang="bn"] .teacher-desig{ font-size: 0.88rem; }
 
 @media (max-width: 900px){
   .head-grid{ grid-template-columns: 1fr; max-width: 560px; }
+}
+@media (max-width: 720px){
+  .staff-photos{ grid-template-columns: 1fr 1fr; grid-template-rows: 210px 130px; }
+  .staff-photos .staff-photo-main{ grid-row: auto; grid-column: span 2; }
 }
 @media (max-width: 520px){
   .head-card{ grid-template-columns: 112px 1fr; gap: 1rem; padding: 1.1rem; }

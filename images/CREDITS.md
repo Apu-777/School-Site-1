@@ -1,6 +1,6 @@
 # Photo credits
 
-School and campus photos are from [Wikimedia Commons](https://commons.wikimedia.org); staff portraits are from Pexels and Unsplash. All are used under their free licenses. They were resized and recompressed for the web. These are demo images: swap in the client school's own photos before going live.
+All photos are from [Wikimedia Commons](https://commons.wikimedia.org) and are used under their free licenses. They were resized and recompressed for the web. These are demo images: swap in the client school's own photos before going live.
 
 ## School photos
 
@@ -22,28 +22,8 @@ School and campus photos are from [Wikimedia Commons](https://commons.wikimedia.
 | assembly.jpg | [Students Assembly Time.jpg](https://commons.wikimedia.org/wiki/File:Students_Assembly_Time.jpg) | Ibrahim Tanzil | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | school-building.jpg | [Khoksa Janipur Pilot High School..JPG](https://commons.wikimedia.org/wiki/File:Khoksa_Janipur_Pilot_High_School..JPG) | Uday Karmoker | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | library.jpg | [Saint Joseph Higher Secondary School Library.jpg](https://commons.wikimedia.org/wiki/File:Saint_Joseph_Higher_Secondary_School_Library.jpg) | Josh Katz 12 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| teachers-group.jpg | [ভেড়ম দ্বি মুখী উচ্চ বিদ্যালয় শিক্ষক.jpg](https://commons.wikimedia.org/wiki/File:%E0%A6%AD%E0%A7%87%E0%A6%A1%E0%A6%BC%E0%A6%AE_%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BF_%E0%A6%AE%E0%A7%81%E0%A6%96%E0%A7%80_%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9A_%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95.jpg) | Mominul Haque villa | CC0 |
+| teachers-group-2.jpg | [বিদ্যালয়ের শিক্ষকবৃন্দ.jpg](https://commons.wikimedia.org/wiki/File:%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%B0_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A6%AC%E0%A7%83%E0%A6%A8%E0%A7%8D%E0%A6%A6.jpg) | Ahsan Habib Tamim | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| teachers-students.jpg | [Shaheed Aman Ullah Public High School - Teachers & Students Old Frame Picture](https://commons.wikimedia.org/wiki/File:Shaheed_Aman_Ullah_Public_High_School_-_Teachers_%26_Students_Old_Frame_Picture,_Alairpur,_Kazir_Hat,_12No._Kutubpur,_Begumganj,_Noakhali,_Bangladesh.jpg) | Afjalshorifofficial | CC0 |
 
-## Staff portraits (`images/people/`)
-
-Stock photos of models, cropped to passport-style headshots. **The names and job titles on the site are made up for the demo and have nothing to do with the people photographed.** Replace them with the client school's real staff photos before going live.
-
-| File | Source | License |
-|---|---|---|
-| people/chairman.jpg | [Pexels](https://www.pexels.com/photo/39561964/) | [Pexels License](https://www.pexels.com/license/) |
-| people/headmaster.jpg | [Pexels](https://www.pexels.com/photo/19746166/) | [Pexels License](https://www.pexels.com/license/) |
-| people/asst-headmaster.jpg | [Pexels](https://www.pexels.com/photo/14245887/) | [Pexels License](https://www.pexels.com/license/) |
-| people/vice-principal.jpg | [Pexels](https://www.pexels.com/photo/15265578/) | [Pexels License](https://www.pexels.com/license/) |
-| people/rafiqul.jpg | [Pexels](https://www.pexels.com/photo/34719253/) | [Pexels License](https://www.pexels.com/license/) |
-| people/subrata.jpg | [Pexels](https://www.pexels.com/photo/33261955/) | [Pexels License](https://www.pexels.com/license/) |
-| people/abu-taher.jpg | [Pexels](https://www.pexels.com/photo/28497003/) | [Pexels License](https://www.pexels.com/license/) |
-| people/dipika.jpg | [Pexels](https://www.pexels.com/photo/32038888/) | [Pexels License](https://www.pexels.com/license/) |
-| people/farhana.jpg | [Unsplash](https://unsplash.com/photos/ooTApvkkmFs) | [Unsplash License](https://unsplash.com/license) |
-| people/mahmudul.jpg | [Unsplash](https://unsplash.com/photos/9rOvhLyqbVw) | [Unsplash License](https://unsplash.com/license) |
-| people/tanvir.jpg | [Unsplash](https://unsplash.com/photos/QICAEg5_68A) | [Unsplash License](https://unsplash.com/license) |
-| people/sharmin.jpg | [Unsplash](https://unsplash.com/photos/Sa0YZta_Fb8) | [Unsplash License](https://unsplash.com/license) |
-| people/sabina.jpg | [Unsplash](https://unsplash.com/photos/Gs39c7ShZIA) | [Unsplash License](https://unsplash.com/license) |
-| people/kamrul.jpg | [Unsplash](https://unsplash.com/photos/lIxF9Xk6t5E) | [Unsplash License](https://unsplash.com/license) |
-| people/nasima.jpg | [Unsplash](https://unsplash.com/photos/Akugnc8ROwg) | [Unsplash License](https://unsplash.com/license) |
-| people/mamun.jpg | [Unsplash](https://unsplash.com/photos/AzRsYOAvwIg) | [Unsplash License](https://unsplash.com/license) |
-| people/anita.jpg | [Unsplash](https://unsplash.com/photos/inlFCwVmyC0) | [Unsplash License](https://unsplash.com/license) |
-| people/zahidul.jpg | [Unsplash](https://unsplash.com/photos/klqIuVhRnVI) | [Unsplash License](https://unsplash.com/license) |
+The three teacher photos show real teachers at Bangladeshi schools. They're used as unnamed group pictures only. The named staff cards on the site deliberately use person outlines rather than anyone's face, because the names are made up for the demo.
