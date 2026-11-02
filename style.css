@@ -265,14 +265,6 @@ p{ color: var(--ink-soft); }
   font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase;
   letter-spacing: 0.02em; color: var(--ink-soft); display: block; margin-bottom: 1rem;
 }
-.team-social{ display: flex; gap: 0.5rem; justify-content: center; padding-top: 0.9rem; border-top: 1px solid var(--line); }
-.team-social a{
-  width: 30px; height: 30px; border-radius: 50%;
-  border: 1px solid var(--line); display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-mono); font-size: 0.68rem; text-transform: lowercase; color: var(--ink-soft);
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-.team-social a:hover{ background: var(--navy); border-color: var(--navy); color: var(--paper); }
 
 .carousel-btn{
   position: absolute; top: 40%; transform: translateY(-50%);
@@ -677,4 +669,74 @@ html[lang="bn"] .quote-block blockquote{ font-style: normal; }
   .stats-bar{ grid-template-columns: repeat(2, 1fr); }
   .stats-bar .stat:nth-child(odd){ border-left: none; }
   .stats-bar .stat:nth-child(n+3){ border-top: 1px solid var(--line); }
+}
+
+/* ---------- leadership & faculty (সভাপতি, প্রধান শিক্ষক, শিক্ষকবৃন্দ) ---------- */
+.head-grid{
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem;
+  max-width: 980px; margin: 0 auto 3.4rem;
+}
+.head-card{
+  display: grid; grid-template-columns: 168px 1fr; gap: 1.5rem; align-items: center;
+  background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold);
+  border-radius: 0 0 var(--radius) var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm);
+}
+.head-photo img{
+  width: 100%; aspect-ratio: 4/5; object-fit: cover;
+  border-radius: 6px; border: 4px solid var(--paper); outline: 1px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+.head-badge{
+  display: inline-block; background: var(--brick); color: var(--paper);
+  font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 0.3rem 0.75rem; border-radius: 3px; margin-bottom: 0.7rem;
+}
+.head-card h3{ font-size: 1.3rem; margin-bottom: 0.2rem; }
+.head-role{ font-size: 0.9rem; color: var(--navy); font-weight: 500; margin-bottom: 0.7rem; }
+.head-meta{ margin-bottom: 0.8rem; }
+.head-meta li{ position: relative; padding-left: 1rem; font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 0.2rem; }
+.head-meta li::before{ content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); }
+.head-card a.more{ font-family: var(--font-mono); font-size: 0.75rem; color: var(--brick); }
+
+.staff-subhead{
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 1.8rem;
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; color: var(--navy);
+}
+.staff-subhead::before, .staff-subhead::after{ content: ""; flex: 1; height: 1px; background: var(--line); }
+.staff-more{ text-align: center; margin-top: 2rem; }
+
+/* home carousel cards with photos */
+.team-photo{ overflow: hidden; }
+.team-photo img{ width: 100%; height: 100%; object-fit: cover; }
+.team-desig{ display: block; font-size: 0.82rem; font-weight: 600; color: var(--brick); margin-bottom: 0.1rem; }
+.team-role{ margin-bottom: 0; }
+
+/* round photos in message and leadership cards */
+.avatar-photo{ object-fit: cover; object-position: center top; background: var(--paper-dim); border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--gold); }
+.message-card .avatar-photo{ width: 76px; height: 76px; }
+.leader-card .avatar-photo{ width: 120px; height: 120px; }
+
+/* teachers page: passport-style photo cards */
+.teacher-card{ display: grid; grid-template-columns: 96px 1fr; gap: 1.1rem; align-items: start; }
+.teacher-photo{
+  width: 96px; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px;
+  border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--line), var(--shadow-sm);
+}
+.teacher-desig{ display: block; font-size: 0.8rem; color: var(--navy); font-weight: 500; margin-bottom: 0.5rem; }
+.teacher-card h3{ margin-bottom: 0.2rem; }
+
+html[lang="bn"] .head-badge{ font-family: "Hind Siliguri", var(--font-body); font-size: 0.9rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+html[lang="bn"] .head-card a.more{ font-family: "Hind Siliguri", var(--font-body); font-size: 0.92rem; }
+html[lang="bn"] .head-role{ font-size: 0.95rem; }
+html[lang="bn"] .head-meta li{ font-size: 0.93rem; }
+html[lang="bn"] .team-desig{ font-size: 0.9rem; }
+html[lang="bn"] .teacher-desig{ font-size: 0.88rem; }
+
+@media (max-width: 900px){
+  .head-grid{ grid-template-columns: 1fr; max-width: 560px; }
+}
+@media (max-width: 520px){
+  .head-card{ grid-template-columns: 112px 1fr; gap: 1rem; padding: 1.1rem; }
+  .teacher-card{ grid-template-columns: 80px 1fr; }
+  .teacher-photo{ width: 80px; }
 }

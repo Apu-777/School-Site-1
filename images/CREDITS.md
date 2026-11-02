@@ -1,6 +1,8 @@
 # Photo credits
 
-All photos are from [Wikimedia Commons](https://commons.wikimedia.org) and are used under their free licenses. They were resized and recompressed for the web. These are demo images: swap in the client school's own photos before going live.
+School and campus photos are from [Wikimedia Commons](https://commons.wikimedia.org); staff portraits are from Pexels and Unsplash. All are used under their free licenses. They were resized and recompressed for the web. These are demo images: swap in the client school's own photos before going live.
+
+## School photos
 
 | File | Original | Author | License |
 |---|---|---|---|
@@ -20,3 +22,28 @@ All photos are from [Wikimedia Commons](https://commons.wikimedia.org) and are u
 | assembly.jpg | [Students Assembly Time.jpg](https://commons.wikimedia.org/wiki/File:Students_Assembly_Time.jpg) | Ibrahim Tanzil | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | school-building.jpg | [Khoksa Janipur Pilot High School..JPG](https://commons.wikimedia.org/wiki/File:Khoksa_Janipur_Pilot_High_School..JPG) | Uday Karmoker | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | library.jpg | [Saint Joseph Higher Secondary School Library.jpg](https://commons.wikimedia.org/wiki/File:Saint_Joseph_Higher_Secondary_School_Library.jpg) | Josh Katz 12 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+## Staff portraits (`images/people/`)
+
+Stock photos of models, cropped to passport-style headshots. **The names and job titles on the site are made up for the demo and have nothing to do with the people photographed.** Replace them with the client school's real staff photos before going live.
+
+| File | Source | License |
+|---|---|---|
+| people/chairman.jpg | [Pexels](https://www.pexels.com/photo/39561964/) | [Pexels License](https://www.pexels.com/license/) |
+| people/headmaster.jpg | [Pexels](https://www.pexels.com/photo/19746166/) | [Pexels License](https://www.pexels.com/license/) |
+| people/asst-headmaster.jpg | [Pexels](https://www.pexels.com/photo/14245887/) | [Pexels License](https://www.pexels.com/license/) |
+| people/vice-principal.jpg | [Pexels](https://www.pexels.com/photo/15265578/) | [Pexels License](https://www.pexels.com/license/) |
+| people/rafiqul.jpg | [Pexels](https://www.pexels.com/photo/34719253/) | [Pexels License](https://www.pexels.com/license/) |
+| people/subrata.jpg | [Pexels](https://www.pexels.com/photo/33261955/) | [Pexels License](https://www.pexels.com/license/) |
+| people/abu-taher.jpg | [Pexels](https://www.pexels.com/photo/28497003/) | [Pexels License](https://www.pexels.com/license/) |
+| people/dipika.jpg | [Pexels](https://www.pexels.com/photo/32038888/) | [Pexels License](https://www.pexels.com/license/) |
+| people/farhana.jpg | [Unsplash](https://unsplash.com/photos/ooTApvkkmFs) | [Unsplash License](https://unsplash.com/license) |
+| people/mahmudul.jpg | [Unsplash](https://unsplash.com/photos/9rOvhLyqbVw) | [Unsplash License](https://unsplash.com/license) |
+| people/tanvir.jpg | [Unsplash](https://unsplash.com/photos/QICAEg5_68A) | [Unsplash License](https://unsplash.com/license) |
+| people/sharmin.jpg | [Unsplash](https://unsplash.com/photos/Sa0YZta_Fb8) | [Unsplash License](https://unsplash.com/license) |
+| people/sabina.jpg | [Unsplash](https://unsplash.com/photos/Gs39c7ShZIA) | [Unsplash License](https://unsplash.com/license) |
+| people/kamrul.jpg | [Unsplash](https://unsplash.com/photos/lIxF9Xk6t5E) | [Unsplash License](https://unsplash.com/license) |
+| people/nasima.jpg | [Unsplash](https://unsplash.com/photos/Akugnc8ROwg) | [Unsplash License](https://unsplash.com/license) |
+| people/mamun.jpg | [Unsplash](https://unsplash.com/photos/AzRsYOAvwIg) | [Unsplash License](https://unsplash.com/license) |
+| people/anita.jpg | [Unsplash](https://unsplash.com/photos/inlFCwVmyC0) | [Unsplash License](https://unsplash.com/license) |
+| people/zahidul.jpg | [Unsplash](https://unsplash.com/photos/klqIuVhRnVI) | [Unsplash License](https://unsplash.com/license) |
