@@ -753,3 +753,20 @@ html[lang="bn"] .teacher-desig{ font-size: 0.88rem; }
   .teacher-card{ grid-template-columns: 80px 1fr; }
   .teacher-photo{ width: 80px; }
 }
+
+/* ---------- inner page banners: photo behind a tint ---------- */
+.page-hero.has-bg{
+  position: relative;
+  background-color: #122040;
+  background-image:
+    linear-gradient(90deg, rgba(18,32,64,0.94) 0%, rgba(18,32,64,0.84) 45%, rgba(18,32,64,0.55) 100%),
+    var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 720px){
+  .page-hero.has-bg{
+    background-image: linear-gradient(rgba(18,32,64,0.86), rgba(18,32,64,0.86)), var(--hero-bg);
+  }
+}
