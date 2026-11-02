@@ -705,7 +705,15 @@ html[lang="bn"] .quote-block blockquote{ font-style: normal; }
 .staff-subhead::before, .staff-subhead::after{ content: ""; flex: 1; height: 1px; background: var(--line); }
 .staff-more{ text-align: center; margin-top: 2rem; }
 
-/* real teacher group photos (unnamed) */
+/* staff photos inside the framed boxes */
+.head-photo, .team-photo{ overflow: hidden; }
+.head-photo img, .team-photo img{ width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.teacher-photo{ object-fit: cover; object-position: center top; }
+.avatar-photo{ object-fit: cover; object-position: center top; border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--gold); }
+.message-card .avatar-photo{ width: 76px; height: 76px; }
+.leader-card .avatar-photo{ width: 120px; height: 120px; }
+
+/* teacher group photos */
 .staff-photos{
   display: grid; grid-template-columns: 1.7fr 1fr; grid-template-rows: 190px 190px;
   gap: 1rem; margin-bottom: 2.4rem;
