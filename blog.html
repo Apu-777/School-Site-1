@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Ridgeview Academy</title>
+<script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+<title data-en="News — Alokito Model School &amp; College">খবর ও ঘটনা — আলোকিত মডেল স্কুল অ্যান্ড কলেজ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,24 +15,28 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
         <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
       </svg>
-      <span class="brand-name">Ridgeview<br>Academy</span>
+      <span class="brand-name" data-en="Alokito Model<br>School &amp; College">আলোকিত মডেল<br>স্কুল অ্যান্ড কলেজ</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <button class="nav-toggle" aria-label="মেনু খুলুন" data-en-aria-label="Toggle menu"><span></span></button>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="students.html">Students</a>
-      <a href="results.html">Exam Results</a>
-      <a href="about.html">About</a>
-      <a href="blog.html" class="active">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-en="Home">হোম</a>
+      <a href="history.html" data-en="History">ইতিহাস</a>
+      <a href="teachers.html" data-en="Teachers">শিক্ষক</a>
+      <a href="students.html" data-en="Students">শিক্ষার্থী</a>
+      <a href="results.html" data-en="Exam Results">ফলাফল</a>
+      <a href="about.html" data-en="About">আমাদের কথা</a>
+      <a href="blog.html" class="active" data-en="News">খবর</a>
+      <a href="contact.html" data-en="Contact">যোগাযোগ</a>
     </nav>
-    <a href="contact.html" class="btn btn-nav">Enquire</a>
+    <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন / Choose language">
+      <button type="button" data-lang="bn" aria-pressed="true" lang="bn">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-nav" data-en="Admission">ভর্তি তথ্য</a>
   </div>
 </header>
 
@@ -38,9 +44,9 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Blog</div>
-      <h1>News from campus.</h1>
-      <p>Updates from classrooms, clubs, athletics, and the admissions office — posted as they happen.</p>
+      <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="News">খবর</span></div>
+      <h1 data-en="News from school.">স্কুলের খবরাখবর।</h1>
+      <p data-en="Updates from classrooms, clubs, sports, and admissions — posted here as they happen.">ক্লাসরুম, ক্লাব, খেলাধুলা আর ভর্তির সব খবর — যখন যা ঘটে, এখানেই পাবেন।</p>
     </div>
   </section>
 
@@ -48,80 +54,80 @@
     <div class="wrap">
 
       <div class="blog-featured">
-        <img src="https://picsum.photos/id/1074/700/560" alt="Robotics team at Ridgeview Academy">
+        <img src="images/result-celebration.jpg" alt="এসএসসির রেজাল্ট পেয়ে আনন্দ করছে ছাত্রীরা" data-en-alt="Students celebrating their SSC results">
         <div class="blog-body">
-          <span class="blog-tag">Athletics &amp; Clubs</span>
-          <h2>Robotics Team Heads to State Finals</h2>
-          <p>Six students, one very stubborn arm actuator, and a qualifying run nobody saw coming. The team rebuilt their intake mechanism twice in the final week before regionals — and it held.</p>
-          <span class="blog-date">August 12, 2026</span>
-          <a class="btn btn-ghost" href="#" style="margin-top:1rem;">Read Full Story →</a>
+          <span class="blog-tag" data-en="Results">ফলাফল</span>
+          <h2 data-en="SSC 2026: 98.6% Pass, 72 GPA-5s">এসএসসি ২০২৬: ৯৮.৬% পাস, জিপিএ-৫ পেল ৭২ জন</h2>
+          <p data-en="When the results came out, the whole campus felt like Eid. Of 210 candidates, 207 passed — the best result in our history.">রেজাল্ট বের হওয়ার পর পুরো ক্যাম্পাসে যেন ঈদের আনন্দ। ২১০ জন পরীক্ষার্থীর মধ্যে পাস করেছে ২০৭ জন — আমাদের ইতিহাসে এটাই সেরা রেজাল্ট।</p>
+          <span class="blog-date" data-en="10 July 2026">১০ জুলাই ২০২৬</span>
+          <a class="btn btn-ghost" href="#" style="margin-top:1rem;" data-en="Read Full Story →">পুরো খবর পড়ুন →</a>
         </div>
       </div>
 
       <div class="blog-grid">
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1024/500/320" alt="">
+          <img src="images/ict-lab.jpg" alt="নতুন আইসিটি ল্যাবে কম্পিউটারে কাজ করছে শিক্ষার্থীরা" data-en-alt="Students working in the new ICT lab" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-tag">Student Life</span>
-            <span class="blog-date">Jul 30, 2026</span>
-            <h3>Notes From the Fall Expedition Planning Meeting</h3>
-            <p>This year's 9th grade trip swaps the ridge trail for a new route along Millbrook Creek.</p>
-            <a class="more" href="#">Read more →</a>
+            <span class="blog-tag" data-en="ICT">আইসিটি</span>
+            <span class="blog-date" data-en="20 October 2026">২০ অক্টোবর ২০২৬</span>
+            <h3 data-en="New ICT Lab Opens With 40 Computers">নতুন আইসিটি ল্যাব চালু, এখন ৪০টি কম্পিউটার</h3>
+            <p data-en="Forty students can now take class together in the new computer lab, with high-speed internet too.">নতুন কম্পিউটার ল্যাবে এখন একসাথে ৪০ জন ক্লাস করতে পারবে, সাথে আছে হাই-স্পিড ইন্টারনেট।</p>
+            <a class="more" href="#" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1039/500/320" alt="">
+          <img src="images/liberation-war-corner.jpg" alt="পাঠাগারের মুক্তিযুদ্ধ কর্নারে পড়ছে শিক্ষার্থীরা" data-en-alt="Students reading at the Liberation War corner in the library" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-tag">Faculty</span>
-            <span class="blog-date">Jul 14, 2026</span>
-            <h3>Summer Faculty Reading List</h3>
-            <p>What eleven Ridgeview teachers are reading before the new term starts.</p>
-            <a class="more" href="#">Read more →</a>
+            <span class="blog-tag" data-en="Library">পাঠাগার</span>
+            <span class="blog-date" data-en="8 September 2026">৮ সেপ্টেম্বর ২০২৬</span>
+            <h3 data-en="Library Opens a Liberation War Corner">পাঠাগারে চালু হলো মুক্তিযুদ্ধ কর্নার</h3>
+            <p data-en="A dedicated corner of books, photos, and documents about the 1971 Liberation War.">মুক্তিযুদ্ধের বই, ছবি আর দলিলপত্র নিয়ে পাঠাগারে খোলা হয়েছে আলাদা একটা কর্নার।</p>
+            <a class="more" href="#" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1050/500/320" alt="">
+          <img src="images/bncc-scouts.jpg" alt="প্যারেডে দাঁড়ানো বিএনসিসি ক্যাডেটরা" data-en-alt="BNCC cadets lined up for parade" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-tag">Admissions</span>
-            <span class="blog-date">Jun 28, 2026</span>
-            <h3>Applications for Fall 2027 Open September 1</h3>
-            <p>What's changing in this year's application, and what stays exactly the same.</p>
-            <a class="more" href="#">Read more →</a>
+            <span class="blog-tag" data-en="Co-curricular">সহশিক্ষা</span>
+            <span class="blog-date" data-en="25 August 2026">২৫ আগস্ট ২০২৬</span>
+            <h3 data-en="Three-Day BNCC &amp; Scout Camp">বিএনসিসি ও স্কাউট দলের তিন দিনের ক্যাম্প</h3>
+            <p data-en="Three days of pitching tents, first-aid training, and parade drills — rain or shine.">রোদ-বৃষ্টি মাথায় নিয়ে তিন দিন ধরে তাঁবু খাটানো, প্রাথমিক চিকিৎসা আর কুচকাওয়াজের প্রশিক্ষণ।</p>
+            <a class="more" href="#" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1043/500/320" alt="">
+          <img src="images/pohela-boishakh.jpg" alt="পহেলা বৈশাখে লাল-সাদা শাড়িতে শিক্ষার্থীরা" data-en-alt="Students in red and white for Pohela Boishakh" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-tag">Academics</span>
-            <span class="blog-date">Jun 10, 2026</span>
-            <h3>Inside the Senior Research Seminar</h3>
-            <p>A look at this year's projects, from a bio-plastics experiment to a study of local water quality.</p>
-            <a class="more" href="#">Read more →</a>
+            <span class="blog-tag" data-en="Culture">সংস্কৃতি</span>
+            <span class="blog-date" data-en="14 April 2026">১৪ এপ্রিল ২০২৬</span>
+            <h3 data-en="A Colourful Pohela Boishakh">রঙে রঙে পহেলা বৈশাখ উদযাপন</h3>
+            <p data-en="Saris and panjabis, a colourful procession, and panta-ilish to welcome the Bangla New Year 1433.">শাড়ি-পাঞ্জাবি, বর্ণিল শোভাযাত্রা আর পান্তা-ইলিশে বাংলা নববর্ষ ১৪৩৩ বরণ।</p>
+            <a class="more" href="#" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1060/500/320" alt="">
+          <img src="images/sports-day.jpg" alt="মাঠে শরীরচর্চা করছে লাল সোয়েটার পরা শিক্ষার্থীরা" data-en-alt="Students in red sweaters doing drills on the field" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-tag">Arts</span>
-            <span class="blog-date">May 22, 2026</span>
-            <h3>Spring Production Wraps With a Sold-Out Run</h3>
-            <p>The student-directed staging of a new one-act closed out the black-box season.</p>
-            <a class="more" href="#">Read more →</a>
+            <span class="blog-tag" data-en="Sports">খেলাধুলা</span>
+            <span class="blog-date" data-en="12 February 2026">১২ ফেব্রুয়ারি ২০২৬</span>
+            <h3 data-en="A Packed Annual Sports Day">জমজমাট বার্ষিক ক্রীড়া প্রতিযোগিতা</h3>
+            <p data-en="Sprints, long jump, the maths race, and the biscuit race — the field was buzzing for three days.">দৌড়, লং জাম্প, অঙ্ক দৌড় আর বিস্কুট দৌড় — তিন দিনের আয়োজনে মাঠ ছিল জমজমাট।</p>
+            <a class="more" href="#" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
 
         <article class="blog-card">
-          <img src="https://picsum.photos/id/1069/500/320" alt="">
+          <img src="images/victory-day-lights.jpg" alt="বিজয় দিবসে লাল-সবুজ আলোয় সাজানো স্কুল ভবন" data-en-alt="School building lit up in red and green for Victory Day" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-tag">Community</span>
-            <span class="blog-date">May 8, 2026</span>
-            <h3>Alumni Return for the Spring Mentorship Fair</h3>
-            <p>Forty graduates came back to campus to talk careers with current juniors and seniors.</p>
-            <a class="more" href="#">Read more →</a>
+            <span class="blog-tag" data-en="National Days">জাতীয় দিবস</span>
+            <span class="blog-date" data-en="16 December 2025">১৬ ডিসেম্বর ২০২৫</span>
+            <h3 data-en="Campus Lights Up for Victory Day">বিজয় দিবসে লাল-সবুজ আলোয় সাজল ক্যাম্পাস</h3>
+            <p data-en="The whole campus was lit up in red and green, with a parade and a cultural programme.">লাল-সবুজ আলোয় সাজানো হয়েছিল পুরো ক্যাম্পাস, ছিল কুচকাওয়াজ আর সাংস্কৃতিক অনুষ্ঠান।</p>
+            <a class="more" href="#" data-en="Read more →">আরও পড়ুন →</a>
           </div>
         </article>
       </div>
@@ -135,35 +141,35 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>Ridgeview Academy</h4>
-        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+        <h4 data-en="Alokito Model School &amp; College">আলোকিত মডেল স্কুল অ্যান্ড কলেজ</h4>
+        <p data-en="Class 6 to 12 — helping students learn to think for themselves since 1978.">ষষ্ঠ থেকে দ্বাদশ শ্রেণি — ১৯৭৮ সাল থেকে আমরা শিক্ষার্থীদের নিজের মতো করে ভাবতে শেখাচ্ছি।</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="history.html">Our History</a>
-        <a href="teachers.html">Our Teachers</a>
-        <a href="students.html">Our Students</a>
-        <a href="results.html">Exam Results</a>
+        <h4 data-en="Explore">ঘুরে দেখুন</h4>
+        <a href="history.html" data-en="Our History">আমাদের ইতিহাস</a>
+        <a href="teachers.html" data-en="Our Teachers">আমাদের শিক্ষক</a>
+        <a href="students.html" data-en="Our Students">শিক্ষার্থী</a>
+        <a href="results.html" data-en="Exam Results">পরীক্ষার ফলাফল</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-en="School">প্রতিষ্ঠান</h4>
+        <a href="about.html" data-en="About Us">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর ও ঘটনা</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </div>
       <div>
-        <h4>Visit</h4>
-        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
-        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+        <h4 data-en="Visit">ঠিকানা</h4>
+        <p data-en="12/A College Road, Mirpur-10<br>Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০<br>ঢাকা-১২১৬</p>
+        <p data-en="info@yourschool.edu.bd<br>01700-000000">info@yourschool.edu.bd<br>০১৭০০-০০০০০০</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
-      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+      <span data-en="© 2026 Alokito Model School &amp; College. All rights reserved.">© ২০২৬ আলোকিত মডেল স্কুল অ্যান্ড কলেজ। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span><span data-en="Demo site · Photos:">ডেমো সাইট · ছবি:</span> <a href="images/CREDITS.md" data-en="Wikimedia Commons contributors">উইকিমিডিয়া কমন্স</a></span>
     </div>
   </div>
 </footer>
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
 <script src="script.js"></script>
 </body>
 </html>

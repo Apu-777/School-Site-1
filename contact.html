@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Ridgeview Academy</title>
+<script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+<title data-en="Contact — Alokito Model School &amp; College">যোগাযোগ — আলোকিত মডেল স্কুল অ্যান্ড কলেজ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,24 +15,28 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
         <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
       </svg>
-      <span class="brand-name">Ridgeview<br>Academy</span>
+      <span class="brand-name" data-en="Alokito Model<br>School &amp; College">আলোকিত মডেল<br>স্কুল অ্যান্ড কলেজ</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <button class="nav-toggle" aria-label="মেনু খুলুন" data-en-aria-label="Toggle menu"><span></span></button>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="students.html">Students</a>
-      <a href="results.html">Exam Results</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="index.html" data-en="Home">হোম</a>
+      <a href="history.html" data-en="History">ইতিহাস</a>
+      <a href="teachers.html" data-en="Teachers">শিক্ষক</a>
+      <a href="students.html" data-en="Students">শিক্ষার্থী</a>
+      <a href="results.html" data-en="Exam Results">ফলাফল</a>
+      <a href="about.html" data-en="About">আমাদের কথা</a>
+      <a href="blog.html" data-en="News">খবর</a>
+      <a href="contact.html" class="active" data-en="Contact">যোগাযোগ</a>
     </nav>
-    <a href="contact.html" class="btn btn-nav">Enquire</a>
+    <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন / Choose language">
+      <button type="button" data-lang="bn" aria-pressed="true" lang="bn">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-nav" data-en="Admission">ভর্তি তথ্য</a>
   </div>
 </header>
 
@@ -38,9 +44,9 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
-      <h1>Talk to the admissions office.</h1>
-      <p>Whether you're touring, applying, or just curious — the fastest way to reach us is below.</p>
+      <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Contact">যোগাযোগ</span></div>
+      <h1 data-en="Get in touch with us.">আমাদের সাথে যোগাযোগ করুন।</h1>
+      <p data-en="Admissions, a campus visit, or any other question — reach us any way you like below.">ভর্তি, স্কুল ঘুরে দেখা বা অন্য যেকোনো প্রশ্ন — নিচের যেকোনো উপায়ে আমাদের সাথে যোগাযোগ করতে পারেন।</p>
     </div>
   </section>
 
@@ -48,73 +54,73 @@
     <div class="wrap contact-grid">
 
       <div>
-        <h2>Get in Touch</h2>
-        <div class="contact-info-card">
-          <span class="icon">@</span>
-          <div>
-            <h3>Email</h3>
-            <p>admissions@ridgeviewacademy.example</p>
-          </div>
-        </div>
+        <h2 data-en="Get in Touch">যোগাযোগের ঠিকানা</h2>
         <div class="contact-info-card">
           <span class="icon">☎</span>
           <div>
-            <h3>Phone</h3>
-            <p>(802) 555-0148, Mon–Fri, 8:00am–4:00pm</p>
+            <h3 data-en="Phone">ফোন</h3>
+            <p data-en="01700-000000 (Saturday–Thursday, 8am–4pm)">০১৭০০-০০০০০০ (শনি–বৃহস্পতিবার, সকাল ৮টা–বিকাল ৪টা)</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <span class="icon">@</span>
+          <div>
+            <h3 data-en="Email">ইমেইল</h3>
+            <p>info@yourschool.edu.bd</p>
           </div>
         </div>
         <div class="contact-info-card">
           <span class="icon">◎</span>
           <div>
-            <h3>Address</h3>
-            <p>482 Millbrook Lane, Ashford Hills, VT 05401</p>
+            <h3 data-en="Address">ঠিকানা</h3>
+            <p data-en="12/A College Road, Mirpur-10, Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০, ঢাকা-১২১৬</p>
           </div>
         </div>
         <div class="contact-info-card">
           <span class="icon">🕐</span>
           <div>
-            <h3>Office Hours</h3>
-            <p>Monday–Friday, 8:00am–4:00pm. Campus tours by appointment only.</p>
+            <h3 data-en="Office Hours">অফিস সময়</h3>
+            <p data-en="Saturday to Thursday, 8am to 4pm. Closed on Fridays. Please call ahead if you'd like to visit the campus.">শনিবার থেকে বৃহস্পতিবার, সকাল ৮টা থেকে বিকাল ৪টা। শুক্রবার বন্ধ। স্কুল ঘুরে দেখতে চাইলে আগে একটা ফোন দিয়ে আসুন।</p>
           </div>
         </div>
 
         <div class="map-box">
-          Map embed placeholder — replace with a Google Maps or OpenStreetMap embed of 482 Millbrook Lane, Ashford Hills, VT.
+          <iframe src="https://maps.google.com/maps?q=Mirpur%2010%2C%20Dhaka&amp;z=15&amp;output=embed" title="স্কুলের লোকেশন" data-en-title="School location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
       <div>
-        <h2>Send a Message</h2>
+        <h2 data-en="Send a Message">মেসেজ পাঠান</h2>
         <form class="contact-form">
           <div class="form-grid">
             <div class="form-field">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Jordan Casey" required>
+              <label for="name" data-en="Full Name">আপনার নাম</label>
+              <input type="text" id="name" name="name" placeholder="যেমন: রাকিব হাসান" data-en-placeholder="e.g. Rakib Hasan" required>
             </div>
             <div class="form-field">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="jordan@example.com" required>
+              <label for="phone" data-en="Mobile Number">মোবাইল নম্বর</label>
+              <input type="tel" id="phone" name="phone" placeholder="০১৭XX-XXXXXX" data-en-placeholder="017XX-XXXXXX" required>
             </div>
             <div class="form-field">
-              <label for="phone">Phone (optional)</label>
-              <input type="tel" id="phone" name="phone" placeholder="(802) 555-0100">
+              <label for="email" data-en="Email (optional)">ইমেইল (না দিলেও চলবে)</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
             </div>
             <div class="form-field">
-              <label for="reason">I'm reaching out about</label>
+              <label for="reason" data-en="I'm reaching out about">যে বিষয়ে জানতে চান</label>
               <select id="reason" name="reason">
-                <option>Admissions &amp; Enrollment</option>
-                <option>Campus Tour Request</option>
-                <option>Exam Results / Registrar</option>
-                <option>General Question</option>
+                <option data-en="Admission">ভর্তি সংক্রান্ত</option>
+                <option data-en="Campus visit">স্কুল ঘুরে দেখতে চাই</option>
+                <option data-en="Exam results">পরীক্ষার ফলাফল</option>
+                <option data-en="Something else">অন্য কোনো প্রশ্ন</option>
               </select>
             </div>
             <div class="form-field full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us a bit about what you're looking for..." required></textarea>
+              <label for="message" data-en="Message">আপনার কথা</label>
+              <textarea id="message" name="message" rows="5" placeholder="কী জানতে চান, একটু লিখে জানান..." data-en-placeholder="Tell us a bit about what you're looking for..." required></textarea>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note form-status">We typically reply within two business days.</p>
+          <button type="submit" class="btn btn-primary" data-en="Send Message">পাঠিয়ে দিন</button>
+          <p class="form-note form-status" data-en="We usually reply within two working days.">সাধারণত দুই কার্যদিবসের মধ্যে আমরা উত্তর দিই।</p>
         </form>
       </div>
 
@@ -127,35 +133,35 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>Ridgeview Academy</h4>
-        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+        <h4 data-en="Alokito Model School &amp; College">আলোকিত মডেল স্কুল অ্যান্ড কলেজ</h4>
+        <p data-en="Class 6 to 12 — helping students learn to think for themselves since 1978.">ষষ্ঠ থেকে দ্বাদশ শ্রেণি — ১৯৭৮ সাল থেকে আমরা শিক্ষার্থীদের নিজের মতো করে ভাবতে শেখাচ্ছি।</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="history.html">Our History</a>
-        <a href="teachers.html">Our Teachers</a>
-        <a href="students.html">Our Students</a>
-        <a href="results.html">Exam Results</a>
+        <h4 data-en="Explore">ঘুরে দেখুন</h4>
+        <a href="history.html" data-en="Our History">আমাদের ইতিহাস</a>
+        <a href="teachers.html" data-en="Our Teachers">আমাদের শিক্ষক</a>
+        <a href="students.html" data-en="Our Students">শিক্ষার্থী</a>
+        <a href="results.html" data-en="Exam Results">পরীক্ষার ফলাফল</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-en="School">প্রতিষ্ঠান</h4>
+        <a href="about.html" data-en="About Us">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর ও ঘটনা</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </div>
       <div>
-        <h4>Visit</h4>
-        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
-        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+        <h4 data-en="Visit">ঠিকানা</h4>
+        <p data-en="12/A College Road, Mirpur-10<br>Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০<br>ঢাকা-১২১৬</p>
+        <p data-en="info@yourschool.edu.bd<br>01700-000000">info@yourschool.edu.bd<br>০১৭০০-০০০০০০</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
-      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+      <span data-en="© 2026 Alokito Model School &amp; College. All rights reserved.">© ২০২৬ আলোকিত মডেল স্কুল অ্যান্ড কলেজ। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span><span data-en="Demo site · Photos:">ডেমো সাইট · ছবি:</span> <a href="images/CREDITS.md" data-en="Wikimedia Commons contributors">উইকিমিডিয়া কমন্স</a></span>
     </div>
   </div>
 </footer>
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
 <script src="script.js"></script>
 </body>
 </html>

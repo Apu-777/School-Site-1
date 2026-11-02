@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exam Results — Ridgeview Academy</title>
+<script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+<title data-en="Exam Results — Alokito Model School &amp; College">পরীক্ষার ফলাফল — আলোকিত মডেল স্কুল অ্যান্ড কলেজ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,24 +15,28 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 2L30 8V16C30 24 24.5 29.5 17 32C9.5 29.5 4 24 4 16V8L17 2Z" fill="#122040" stroke="#D9A441" stroke-width="1.5"/>
         <path d="M17 10L21 12.5V17C21 20 19.3 22 17 23C14.7 22 13 20 13 17V12.5L17 10Z" fill="#D9A441"/>
       </svg>
-      <span class="brand-name">Ridgeview<br>Academy</span>
+      <span class="brand-name" data-en="Alokito Model<br>School &amp; College">আলোকিত মডেল<br>স্কুল অ্যান্ড কলেজ</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <button class="nav-toggle" aria-label="মেনু খুলুন" data-en-aria-label="Toggle menu"><span></span></button>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="teachers.html">Teachers</a>
-      <a href="students.html">Students</a>
-      <a href="results.html" class="active">Exam Results</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-en="Home">হোম</a>
+      <a href="history.html" data-en="History">ইতিহাস</a>
+      <a href="teachers.html" data-en="Teachers">শিক্ষক</a>
+      <a href="students.html" data-en="Students">শিক্ষার্থী</a>
+      <a href="results.html" class="active" data-en="Exam Results">ফলাফল</a>
+      <a href="about.html" data-en="About">আমাদের কথা</a>
+      <a href="blog.html" data-en="News">খবর</a>
+      <a href="contact.html" data-en="Contact">যোগাযোগ</a>
     </nav>
-    <a href="contact.html" class="btn btn-nav">Enquire</a>
+    <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন / Choose language">
+      <button type="button" data-lang="bn" aria-pressed="true" lang="bn">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-nav" data-en="Admission">ভর্তি তথ্য</a>
   </div>
 </header>
 
@@ -38,62 +44,64 @@
 
   <section class="page-hero">
     <div class="wrap">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Exam Results</div>
-      <h1>Five years of results, in full.</h1>
-      <p>Ridgeview reports results the same way every year — no cohort left out, no comparison years dropped.</p>
+      <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Exam Results">পরীক্ষার ফলাফল</span></div>
+      <h1 data-en="Five years of results, in full.">পাঁচ বছরের ফলাফল, পুরোটাই।</h1>
+      <p data-en="We publish our results the same way every year — no batch left out, no year hidden.">প্রতি বছর আমরা একইভাবে ফলাফল প্রকাশ করি — কোনো ব্যাচ বাদ দিই না, কোনো বছর লুকাই না।</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
       <div class="results-stats">
-        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">2026 pass rate</span></div>
-        <div class="stat"><span class="stat-num">61%</span><span class="stat-label">grades A*–A</span></div>
-        <div class="stat"><span class="stat-num">B+</span><span class="stat-label">avg. grade, all subjects</span></div>
-        <div class="stat"><span class="stat-num">94%</span><span class="stat-label">enrolled in college</span></div>
+        <div class="stat"><span class="stat-num" data-en="98.6%">৯৮.৬%</span><span class="stat-label" data-en="SSC 2026 pass rate">এসএসসি ২০২৬ পাসের হার</span></div>
+        <div class="stat"><span class="stat-num" data-en="72">৭২</span><span class="stat-label" data-en="GPA-5 in SSC 2026">এসএসসি ২০২৬-এ জিপিএ-৫</span></div>
+        <div class="stat"><span class="stat-num" data-en="321">৩২১</span><span class="stat-label" data-en="GPA-5 in the last 5 years">গত ৫ বছরে মোট জিপিএ-৫</span></div>
+        <div class="stat"><span class="stat-num" data-en="4.72">৪.৭২</span><span class="stat-label" data-en="average GPA, SSC 2026">গড় জিপিএ, এসএসসি ২০২৬</span></div>
       </div>
 
-      <span class="eyebrow">Year-Wise Performance</span>
-      <h2>Graduating class results, 2022–2026.</h2>
+      <span class="eyebrow" data-en="Year-Wise Performance">বছরভিত্তিক ফলাফল</span>
+      <h2 data-en="SSC results, 2022–2026.">এসএসসি ফলাফল, ২০২২–২০২৬</h2>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Year</th><th>Appeared</th><th>Passed</th><th>Pass %</th><th>Distinctions (A*/A)</th></tr>
+            <tr><th data-en="Year">সাল</th><th data-en="Appeared">পরীক্ষার্থী</th><th data-en="Passed">পাস করেছে</th><th data-en="Pass %">পাসের হার</th><th data-en="GPA-5">জিপিএ-৫</th></tr>
           </thead>
           <tbody>
-            <tr><td>2022</td><td>84</td><td>80</td><td>95.2%</td><td>41</td></tr>
-            <tr><td>2023</td><td>89</td><td>86</td><td>96.6%</td><td>47</td></tr>
-            <tr><td>2024</td><td>91</td><td>88</td><td>96.7%</td><td>52</td></tr>
-            <tr><td>2025</td><td>93</td><td>91</td><td>97.8%</td><td>55</td></tr>
-            <tr><td>2026</td><td>96</td><td>94</td><td>97.9%</td><td>58</td></tr>
+            <tr><td data-en="2022">২০২২</td><td data-en="180">১৮০</td><td data-en="175">১৭৫</td><td data-en="97.2%">৯৭.২%</td><td data-en="58">৫৮</td></tr>
+            <tr><td data-en="2023">২০২৩</td><td data-en="186">১৮৬</td><td data-en="181">১৮১</td><td data-en="97.3%">৯৭.৩%</td><td data-en="61">৬১</td></tr>
+            <tr><td data-en="2024">২০২৪</td><td data-en="192">১৯২</td><td data-en="188">১৮৮</td><td data-en="97.9%">৯৭.৯%</td><td data-en="66">৬৬</td></tr>
+            <tr><td data-en="2025">২০২৫</td><td data-en="195">১৯৫</td><td data-en="191">১৯১</td><td data-en="97.9%">৯৭.৯%</td><td data-en="64">৬৪</td></tr>
+            <tr><td data-en="2026">২০২৬</td><td data-en="210">২১০</td><td data-en="207">২০৭</td><td data-en="98.6%">৯৮.৬%</td><td data-en="72">৭২</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="table-note">Figures reflect the Class XII graduating cohort each year. Full statistical breakdowns are available from the registrar on request.</p>
+      <p class="table-note" data-en="Figures cover each year's SSC candidates. Detailed HSC results are available from the school office on request.">প্রতি বছরের এসএসসি পরীক্ষার্থীদের হিসাব। এইচএসসির বিস্তারিত ফলাফল স্কুল অফিসে যোগাযোগ করলে পাবেন।</p>
     </div>
   </section>
 
   <section class="section alt">
     <div class="wrap">
-      <span class="eyebrow">Subject-Wise Performance — Class of 2026</span>
-      <h2>Average and top scores by subject.</h2>
+      <span class="eyebrow" data-en="Subject-Wise Performance — SSC 2026">বিষয়ভিত্তিক ফলাফল — এসএসসি ২০২৬</span>
+      <h2 data-en="Average and top marks by subject.">বিষয় অনুযায়ী গড় ও সর্বোচ্চ নম্বর</h2>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Subject</th><th>Students</th><th>Average Score</th><th>Top Score</th></tr>
+            <tr><th data-en="Subject">বিষয়</th><th data-en="Students">পরীক্ষার্থী</th><th data-en="Average Marks">গড় নম্বর</th><th data-en="Top Marks">সর্বোচ্চ নম্বর</th></tr>
           </thead>
           <tbody>
-            <tr><td>Mathematics</td><td>96</td><td>84%</td><td>99%</td></tr>
-            <tr><td>Physics</td><td>58</td><td>81%</td><td>97%</td></tr>
-            <tr><td>Chemistry</td><td>54</td><td>79%</td><td>96%</td></tr>
-            <tr><td>Biology</td><td>47</td><td>83%</td><td>98%</td></tr>
-            <tr><td>English Literature</td><td>96</td><td>86%</td><td>99%</td></tr>
-            <tr><td>World History</td><td>62</td><td>82%</td><td>97%</td></tr>
-            <tr><td>World Languages</td><td>71</td><td>85%</td><td>98%</td></tr>
+            <tr><td data-en="Bangla">বাংলা</td><td data-en="210">২১০</td><td data-en="78%">৭৮%</td><td data-en="95%">৯৫%</td></tr>
+            <tr><td data-en="English">ইংরেজি</td><td data-en="210">২১০</td><td data-en="74%">৭৪%</td><td data-en="94%">৯৪%</td></tr>
+            <tr><td data-en="Mathematics">গণিত</td><td data-en="210">২১০</td><td data-en="82%">৮২%</td><td data-en="100%">১০০%</td></tr>
+            <tr><td data-en="ICT">আইসিটি</td><td data-en="210">২১০</td><td data-en="86%">৮৬%</td><td data-en="100%">১০০%</td></tr>
+            <tr><td data-en="Bangladesh &amp; Global Studies">বাংলাদেশ ও বিশ্বপরিচয়</td><td data-en="210">২১০</td><td data-en="83%">৮৩%</td><td data-en="97%">৯৭%</td></tr>
+            <tr><td data-en="Physics">পদার্থবিজ্ঞান</td><td data-en="96">৯৬</td><td data-en="80%">৮০%</td><td data-en="98%">৯৮%</td></tr>
+            <tr><td data-en="Chemistry">রসায়ন</td><td data-en="96">৯৬</td><td data-en="78%">৭৮%</td><td data-en="97%">৯৭%</td></tr>
+            <tr><td data-en="Biology">জীববিজ্ঞান</td><td data-en="96">৯৬</td><td data-en="81%">৮১%</td><td data-en="98%">৯৮%</td></tr>
+            <tr><td data-en="Accounting">হিসাববিজ্ঞান</td><td data-en="54">৫৪</td><td data-en="79%">৭৯%</td><td data-en="97%">৯৭%</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="table-note">Scores are reported on Ridgeview's 100-point internal scale, which maps to standard college-application equivalents on request.</p>
+      <p class="table-note" data-en="Marks are out of 100, including practicals. Science: 96 students, Business Studies: 54, Humanities: 60.">নম্বর ১০০-র মধ্যে হিসাব করা (ব্যবহারিকসহ)। বিজ্ঞান বিভাগে ৯৬ জন, ব্যবসায় শিক্ষায় ৫৪ জন আর মানবিকে ৬০ জন।</p>
     </div>
   </section>
 
@@ -101,10 +109,10 @@
     <div class="wrap">
       <div class="cta-banner">
         <div>
-          <h3>Want the full results archive?</h3>
-          <p>Ten years of year-wise and subject-wise data is available as a PDF from the registrar's office.</p>
+          <h3 data-en="Need results from earlier years?">আগের বছরগুলোর রেজাল্ট দরকার?</h3>
+          <p data-en="Full SSC and HSC results for the last ten years are available as a PDF from the school office.">গত দশ বছরের এসএসসি ও এইচএসসির পুরো রেজাল্ট পিডিএফ আকারে স্কুল অফিস থেকে নিতে পারবেন।</p>
         </div>
-        <a href="contact.html" class="btn btn-ghost-light">Request the Report</a>
+        <a href="contact.html" class="btn btn-ghost-light" data-en="Request the Report">রিপোর্ট চেয়ে নিন</a>
       </div>
     </div>
   </section>
@@ -115,35 +123,35 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h4>Ridgeview Academy</h4>
-        <p>A college-preparatory day school for grades 6–12, teaching students to think for themselves since 1978.</p>
+        <h4 data-en="Alokito Model School &amp; College">আলোকিত মডেল স্কুল অ্যান্ড কলেজ</h4>
+        <p data-en="Class 6 to 12 — helping students learn to think for themselves since 1978.">ষষ্ঠ থেকে দ্বাদশ শ্রেণি — ১৯৭৮ সাল থেকে আমরা শিক্ষার্থীদের নিজের মতো করে ভাবতে শেখাচ্ছি।</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="history.html">Our History</a>
-        <a href="teachers.html">Our Teachers</a>
-        <a href="students.html">Our Students</a>
-        <a href="results.html">Exam Results</a>
+        <h4 data-en="Explore">ঘুরে দেখুন</h4>
+        <a href="history.html" data-en="Our History">আমাদের ইতিহাস</a>
+        <a href="teachers.html" data-en="Our Teachers">আমাদের শিক্ষক</a>
+        <a href="students.html" data-en="Our Students">শিক্ষার্থী</a>
+        <a href="results.html" data-en="Exam Results">পরীক্ষার ফলাফল</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-en="School">প্রতিষ্ঠান</h4>
+        <a href="about.html" data-en="About Us">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর ও ঘটনা</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </div>
       <div>
-        <h4>Visit</h4>
-        <p>482 Millbrook Lane<br>Ashford Hills, VT 05401</p>
-        <p>admissions@ridgeviewacademy.example<br>(802) 555-0148</p>
+        <h4 data-en="Visit">ঠিকানা</h4>
+        <p data-en="12/A College Road, Mirpur-10<br>Dhaka-1216">১২/এ কলেজ রোড, মিরপুর-১০<br>ঢাকা-১২১৬</p>
+        <p data-en="info@yourschool.edu.bd<br>01700-000000">info@yourschool.edu.bd<br>০১৭০০-০০০০০০</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Ridgeview Academy. All rights reserved.</span>
-      <span>Design template — replace placeholder text, photos, and contact details before publishing.</span>
+      <span data-en="© 2026 Alokito Model School &amp; College. All rights reserved.">© ২০২৬ আলোকিত মডেল স্কুল অ্যান্ড কলেজ। সর্বস্বত্ব সংরক্ষিত।</span>
+      <span><span data-en="Demo site · Photos:">ডেমো সাইট · ছবি:</span> <a href="images/CREDITS.md" data-en="Wikimedia Commons contributors">উইকিমিডিয়া কমন্স</a></span>
     </div>
   </div>
 </footer>
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
 <script src="script.js"></script>
 </body>
 </html>
